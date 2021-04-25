@@ -63,6 +63,29 @@ print(a)
 for i in a:
     print(i)
     print(id(i))
+
+# no constants in python
+# convention full capital letter
+# ex INTEREST_RATE=5
+
+# Escape Characters
+# \t - Tab
+# \n - new line
+# \' - single Qut
+
+# operators
+print(10+2)
+print(10-4)
+print(4*2)
+print(9/3)
+print(9//3)
+print(20%3)
+print(10**2)
+print(10**3)
+
+# Relational Operators
+print(10>2)
+print(10<3)
+print(34<=12)
+print(54>=21)
 '''
-
-
