@@ -25,6 +25,11 @@ print(bool(0.0))
 print(bool(5))
 print(bool(0.1))
 '''
+#str()
+print(str(10))
+print(str(2.0))
+print(str(True))
+print(str(False))
 
 
 
