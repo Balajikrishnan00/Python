@@ -1,2 +1,4 @@
 welcome to python
 this is creating for git repository
+
+ok go ahead with Git Learning at the earlist. coming week, we plan for demo
