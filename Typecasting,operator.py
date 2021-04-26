@@ -142,7 +142,8 @@ min=a if a<b and a<c else b if b<c else c
 max=a if a>b and a>c else b if b>c else c
 print(min)
 print(max)
-'''
+
+#4p
 a=int(input('A:'))
 b=int(input('B:'))
 c=int(input('C:'))
@@ -156,3 +157,12 @@ elif b<c:
 else:
     min=c
     print(min)
+'''
+# Identity Operator
+# memory if location
+# combine with memory location
+a=12
+b=23
+print(a==b)
+print(a is b)
+
