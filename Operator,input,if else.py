@@ -12,3 +12,5 @@ print(total)
 total=eval(input("Enter total"))
 print(total)
 '''
+import math
+print(math.pow(3,2))
