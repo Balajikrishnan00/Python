@@ -60,9 +60,23 @@ while i<length:
 name='BALAJIKRISHNAN'
 final_name=name[0]+name[1:].lower()
 print(final_name)
-'''
+
 # control flow statemets
 #1p
 mark=90
 if mark>=90:
     print('Excellent.')
+'''
+#2p
+mark=int(input('Enter your mark:'))
+if mark>=90:
+    print('excellent.')
+elif mark>=80:
+    print('very Good.')
+elif mark>=40:
+    print('good')
+elif mark>=35:
+    print('Your pass')
+else:
+    print('Fail')
+
