@@ -120,15 +120,39 @@ a,b=21,20
 
 c=30 if a>b else 40
 print(c)
-'''
+
 #2p
 a=10
-b=5
-c=50
+b=50
+c=40
 
 min =a if a<b and a<c else b
 
 print(min)
 
+#3P
+a=int(input('Enter a value:'))
+b=int(input('Enter b value:'))
+c=int(input('Enter c value:'))
 
+min=a if a<b and a<c else b if b<c else c
+# min =a if  10<20 and 10<30
+#        elif  20<30
+#        else 30
+max=a if a>b and a>c else b if b>c else c
+print(min)
+print(max)
+'''
+a=int(input('A:'))
+b=int(input('B:'))
+c=int(input('C:'))
+if a<b and a<c:
+    min=a
+    print(min)
+elif b<c:
+    min=b
+    print(min)
 
+else:
+    min=c
+    print(min)
