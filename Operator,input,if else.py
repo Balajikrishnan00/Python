@@ -55,8 +55,14 @@ i=0
 while i<length:
     print(name,i,'=',name[i])
     i+=1
-'''
+
 #2p
 name='BALAJIKRISHNAN'
 final_name=name[0]+name[1:].lower()
 print(final_name)
+'''
+# control flow statemets
+#1p
+mark=90
+if mark>=90:
+    print('Excellent.')
