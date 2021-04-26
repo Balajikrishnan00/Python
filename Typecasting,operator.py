@@ -157,7 +157,7 @@ elif b<c:
 else:
     min=c
     print(min)
-'''
+
 # Identity Operator
 # memory if location
 # combine with memory location
@@ -165,4 +165,15 @@ a=12
 b=23
 print(a==b)
 print(a is b)
+
+name=input()
+print('hi',name,'welcome to python world.')
+print('hi'+name+'welcome to python world')
+'''
+named_list=[]
+for i in range(5):
+    name=input("enter name:")
+    named_list.append(name)
+print(named_list)
+
 
