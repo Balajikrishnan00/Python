@@ -66,7 +66,7 @@ print(final_name)
 mark=90
 if mark>=90:
     print('Excellent.')
-'''
+
 #2p
 mark=int(input('Enter your mark:'))
 if mark>=90:
@@ -79,4 +79,14 @@ elif mark>=35:
     print('Your pass')
 else:
     print('Fail')
-
+'''
+#2p
+total=int(input('Enter Your Total:'))
+if total>=400:
+    tamil=int(input('Enter Tamil:'))
+    english=int(input('Enter English:'))
+    maths=int(input('Enter Maths:'))
+    science=int(input('Enter  Science:'))
+    social=int(input('Enter Social:'))
+    tot=tamil+english+maths+science+social
+    print(tot)
