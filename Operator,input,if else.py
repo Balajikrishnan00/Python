@@ -41,8 +41,9 @@ print('This is {} from {}'.format(name,city))
 print('This is {0} from {1}'.format(name,city))
 print('This is {1} from {0}'.format(name,city))
 print('This is {m} from {b}'.format(m=name,b=city))
-'''
+
 # slicing
+#1p
 name='Balaji krishnan'
 length=len(name)
 len=len(name)//2
@@ -54,3 +55,8 @@ i=0
 while i<length:
     print(name,i,'=',name[i])
     i+=1
+'''
+#2p
+name='BALAJIKRISHNAN'
+final_name=name[0]+name[1:].lower()
+print(final_name)
