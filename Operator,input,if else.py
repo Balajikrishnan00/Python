@@ -33,7 +33,7 @@ print('hi this is %s i am %i year old my height %d and weight %.2f.'%(name,age,h
 print('hi this is {} i am {} year old my height {} and weight {}'.format(name,age,height,weight))
 
 print(f'hi this is {name} i am {age} year old my height {height} and weight {weight}')
-'''
+
 # replacement Operator
 name='Balaji'
 city='Madurai'
@@ -41,7 +41,16 @@ print('This is {} from {}'.format(name,city))
 print('This is {0} from {1}'.format(name,city))
 print('This is {1} from {0}'.format(name,city))
 print('This is {m} from {b}'.format(m=name,b=city))
+'''
+# slicing
+name='Balaji krishnan'
+length=len(name)
+len=len(name)//2
+final_name=name[:len]+name[len].upper()+name[len+1:]
 
-
-
-
+print(final_name)
+print(len)
+i=0
+while i<length:
+    print(name,i,'=',name[i])
+    i+=1
