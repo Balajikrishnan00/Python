@@ -79,7 +79,7 @@ elif mark>=35:
     print('Your pass')
 else:
     print('Fail')
-'''
+
 #2p
 total=int(input('Enter Your Total:'))
 if total>=400:
@@ -90,3 +90,19 @@ if total>=400:
     social=int(input('Enter Social:'))
     tot=tamil+english+maths+science+social
     print(tot)
+'''
+# iterative statements
+#while
+#for
+
+computer_mind=30
+while True:
+    guess= int(input('tell your guess: '))
+    if guess==computer_mind:
+        print('wow super:')
+        break
+    elif guess>computer_mind:
+        print('your number too big')
+    else:
+        print('your number too little')
+
