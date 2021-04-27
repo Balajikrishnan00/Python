@@ -94,15 +94,16 @@ if total>=400:
 # iterative statements
 #while
 #for
-
+guess=0
 computer_mind=30
-while True:
+while computer_mind!=guess:
     guess= int(input('tell your guess: '))
     if guess==computer_mind:
         print('wow super:')
-        break
+
     elif guess>computer_mind:
         print('your number too big')
     else:
         print('your number too little')
+
 
