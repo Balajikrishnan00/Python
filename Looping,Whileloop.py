@@ -19,11 +19,17 @@ e=int(input('Range value:'))
 while i<=e:
     print(i,end=' ')
     i+=1
-'''
+
 #4p
 i=5
 while i>=0:
     print(i,end=' ')
     i-=1
+'''
+#5p
+i=10
+while i>=0:
+    print(i,end=' ')
+    i-=2
 
 
