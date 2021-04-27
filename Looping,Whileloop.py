@@ -6,10 +6,18 @@ while i<5:
 
     print(i,end=' ')
     i+=1
-'''
+
 #2p
 i=1
 while i<=5:
     print(i,end=' ')
     i+=1
+'''
+#3p
+i=0
+e=int(input('Range value:'))
+while i<=e:
+    print(i,end=' ')
+    i+=1
+
 
