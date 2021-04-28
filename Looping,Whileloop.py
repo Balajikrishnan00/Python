@@ -99,7 +99,7 @@ while firstDay<=lastDay:
     box=box+amount
     print('day%d amount=%d total=%d'%(firstDay,amount,box))
     firstDay+=1
-'''
+
 #15p
 # addition of n numbers
 i=0
@@ -109,5 +109,7 @@ while i<=n:
     sum+=i
     i+=1
 print(sum)
-
-
+'''
+#16p
+name=input('what is your name:')
+print(len(name))
