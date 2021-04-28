@@ -145,11 +145,19 @@ while i<len(name):
         count+=1
     i+=1
 print(count)
-'''
+
 #21p
 n=0
 while n<=10:
     n+=1
     if n==5:
         break
+    print(n)
+'''
+#22p
+n=0
+while n<=10:
+    n+=1
+    if n==5:
+        continue
     print(n)
