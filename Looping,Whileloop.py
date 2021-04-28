@@ -121,7 +121,7 @@ i=0
 while i<len(name):
     print(name[i])
     i+=1
-'''
+
 #18p
 name='saiva'
 i=0
@@ -129,4 +129,9 @@ while i<len(name):
     if name[i]=='a':
         print(name[i])
     i+=1
+'''
 
+#19p
+
+name='rajarajan kumar'
+print(name.count('a'))
