@@ -100,3 +100,14 @@ while firstDay<=lastDay:
     print('day%d amount=%d total=%d'%(firstDay,amount,box))
     firstDay+=1
 '''
+#15p
+# addition of n numbers
+i=0
+n=int(input('Enter n number:'))
+sum=0
+while i<=n:
+    sum+=i
+    i+=1
+print(sum)
+
+
