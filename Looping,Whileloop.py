@@ -169,7 +169,7 @@ for i in name:
     for j in vow:
         if j==i:
             print('vowvels')
-'''
+
 #24p
 name=input('Name:')
 vow=['a','e','i','o','u']
@@ -177,4 +177,13 @@ i=0
 while i<len(name):
     if name[i] in vow:
         print(name[i],'vow')
+    i+=1
+'''
+#25p
+name=input('Name:')
+vow=['a','e','i','o','u']
+i=0
+while i<len(name):
+    if name[i] not in vow:
+        print(name[i],'not vow')
     i+=1
