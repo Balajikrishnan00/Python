@@ -73,3 +73,10 @@ while sN<=eN:
     print(sN,end=' ')
     sN+=6
 '''
+#12p
+sn=1
+en=100
+while sn<=en:
+    if sn%2==0 and sn%3==0:
+        print(sn,end=' ')
+    sn+=1
