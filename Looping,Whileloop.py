@@ -178,7 +178,7 @@ while i<len(name):
     if name[i] in vow:
         print(name[i],'vow')
     i+=1
-'''
+
 #25p
 name=input('Name:')
 vow=['a','e','i','o','u']
@@ -187,3 +187,14 @@ while i<len(name):
     if name[i] not in vow:
         print(name[i],'not vow')
     i+=1
+'''
+name=input('Name:')
+i=0
+count=0
+
+while i<len(name):
+    if name[i] in ['a','e','i','o','u']:
+       count+=1
+    i+=1
+print(count)
+
