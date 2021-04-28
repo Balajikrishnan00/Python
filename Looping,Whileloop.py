@@ -161,7 +161,7 @@ while n<=10:
     if n==5:
         continue
     print(n)
-'''
+
 #23p
 name=input('Enter a name:')
 vow=['a','e','i','o','u']
@@ -169,3 +169,12 @@ for i in name:
     for j in vow:
         if j==i:
             print('vowvels')
+'''
+#24p
+name=input('Name:')
+vow=['a','e','i','o','u']
+i=0
+while i<len(name):
+    if name[i] in vow:
+        print(name[i],'vow')
+    i+=1
