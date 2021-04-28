@@ -113,12 +113,20 @@ print(sum)
 #16p
 name=input('what is your name:')
 print(len(name))
-'''
+
 
 #17p
 name=input('name:')
 i=0
 while i<len(name):
     print(name[i])
+    i+=1
+'''
+#18p
+name='saiva'
+i=0
+while i<len(name):
+    if name[i]=='a':
+        print(name[i])
     i+=1
 
