@@ -58,10 +58,18 @@ while sNumber<=eNumber:
         print(sNumber,end=' ')
     sNumber+=1
 
+#10p
 startN=1
 tableN=int(input('Table Number:'))
 endN=int(input('End Number:'))
 while startN<=endN:
     print(f'{startN}*{tableN}={startN*tableN}')
     startN+=1
+
+#11p
+sN=6
+eN=100
+while sN<=eN:
+    print(sN,end=' ')
+    sN+=6
 '''
