@@ -109,7 +109,16 @@ while i<=n:
     sum+=i
     i+=1
 print(sum)
-'''
+
 #16p
 name=input('what is your name:')
 print(len(name))
+'''
+
+#17p
+name=input('name:')
+i=0
+while i<len(name):
+    print(name[i])
+    i+=1
+
