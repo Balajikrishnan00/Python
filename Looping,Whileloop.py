@@ -80,10 +80,23 @@ while sn<=en:
     if sn%2==0 and sn%3==0:
         print(sn,end=' ')
     sn+=1
-'''
+#13p
 s=1
 e=100
 while s<=100:
     if s%2==0 or s%3==0:
         print(s,end=' ')
     s+=1
+
+
+#14p
+box=0
+firstDay=1
+lastDay=365
+amount=0
+while firstDay<=lastDay:
+    amount+=1
+    box=box+amount
+    print('day%d amount=%d total=%d'%(firstDay,amount,box))
+    firstDay+=1
+'''
