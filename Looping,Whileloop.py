@@ -188,6 +188,7 @@ while i<len(name):
         print(name[i],'not vow')
     i+=1
 '''
+#26p
 name=input('Name:')
 i=0
 count=0
