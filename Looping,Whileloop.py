@@ -230,7 +230,27 @@ print('vowels in e:%i'%e)
 print('vowels in i:%d'%i)
 print('vowels in o:%i'%o)
 print('vowels in u:%i'%u)
+
+#28p
+sentance ='Chennai madurai kovai'
+space=0
+l=0
+while l <len(sentance):
+    if sentance[l]==' ':
+       space+=1
+    l+=1
+print(space)
 '''
-
-
+#29p
+name=' india lan dan america n   m '.strip()
+space=0
+world=1
+l=0
+while l<len(name):
+    if name[l]==' ':
+        space+=1
+        world+=1
+    l+=1
+print('space;',space)
+print('world',world)
 
