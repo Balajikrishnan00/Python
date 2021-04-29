@@ -4,3 +4,5 @@ this is creating for git repository
 ok go ahead with Git Learning at the earlist. coming week, we plan for demo
 
 i am going to learn Pyton
+
+i'll uploade all my practices programs
