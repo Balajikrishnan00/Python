@@ -187,7 +187,7 @@ while i<len(name):
     if name[i] not in vow:
         print(name[i],'not vow')
     i+=1
-'''
+
 #26p
 name=input('Name:')
 i=0
@@ -198,4 +198,39 @@ while i<len(name):
        count+=1
     i+=1
 print(count)
+'''
+
+#27p
+name=input('Enter a Name:')
+l=0
+a=0
+e=0
+i=0
+o=0
+u=0
+while l<len(name):
+    if name[l]=='a':
+        a+=1
+        l+=1
+    elif name[l]=='e':
+        e+=1
+        l+= 1
+    elif name[l]=='i':
+        i+=1
+        l+= 1
+    elif name[l]=='o':
+        o+=1
+        l+= 1
+    elif name[l]=='u':
+        u+=1
+        l+= 1
+    l+=1
+print('vowels in a:%i'%a)
+print('vowels in e:%i'%e)
+print('vowels in i:%d'%i)
+print('vowels in o:%i'%o)
+print('vowels in u:%i'%u)
+
+
+
 
