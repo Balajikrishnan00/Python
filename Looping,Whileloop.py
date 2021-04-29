@@ -198,7 +198,7 @@ while i<len(name):
        count+=1
     i+=1
 print(count)
-'''
+
 
 #27p
 name=input('Enter a Name:')
@@ -230,7 +230,7 @@ print('vowels in e:%i'%e)
 print('vowels in i:%d'%i)
 print('vowels in o:%i'%o)
 print('vowels in u:%i'%u)
-
+'''
 
 
 
