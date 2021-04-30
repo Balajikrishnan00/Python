@@ -77,8 +77,6 @@ while i<no:
     if no%i==0:
         print('not prime')
         break
-
-
     i+=1
 else:
     print('prime')
