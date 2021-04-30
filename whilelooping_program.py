@@ -60,4 +60,13 @@ while True:
         break
     big+=1
 '''
+#6p fact
+n=5
+total=1
+while n>0:
+    total*=n
+    print(total)
+    n-=1
+
+
 
