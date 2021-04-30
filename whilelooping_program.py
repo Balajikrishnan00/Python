@@ -37,4 +37,15 @@ for x in sum1:
     for y in sum2:
         if x==y:
             print(x)
+#4p
+# LCM
+no1=2
+no2=8
+big =no1 if no1>no2 else no2
+#print(big)
+
+if big%no1==0 and big%no2==0:
+    print('LCM ',big)
+
+print('ji')
 '''
