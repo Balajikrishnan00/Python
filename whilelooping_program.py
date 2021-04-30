@@ -62,11 +62,11 @@ while True:
 '''
 #6p fact
 n=5
-total=1
+fact=1
 while n>0:
-    total*=n
-    print(total)
+    fact*=n
+    #print(fact)
     n-=1
-
+print(fact)
 
 
