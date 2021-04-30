@@ -59,7 +59,7 @@ while True:
         print('LCM',big)
         break
     big+=1
-'''
+
 #6p fact
 n=5
 fact=1
@@ -68,5 +68,17 @@ while n>0:
     #print(fact)
     n-=1
 print(fact)
+'''
+#7p Prime number
+
+no=int(input('Enter a number:'))
+i=2
+while i<no:
+    if no%i==0:
+        print('not prime')
+        break
 
 
+    i+=1
+else:
+    print('prime')
