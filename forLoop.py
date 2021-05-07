@@ -64,3 +64,9 @@ for l in range(n+1):
 print(total)
 
 ------------------------------"""
+# fact
+n=int(input('Enter n Factorial Number:'))
+total=1
+for x in range(1,n+1):
+    total*=x
+print(total)
