@@ -130,7 +130,7 @@ for x in range(6):
     for y in range(x):
         print(y,end='')
     print()
----------------------------"""
+---------------------------
 # nested While
 i=1
 
@@ -144,3 +144,13 @@ while i<=5:
     i+=1
 else:
     print('Program terminated')
+---------------------------------"""
+i=5
+
+while i>=0:
+    j=1
+    while j<=i:
+        print(j,end=' ')
+        j+=1
+    print()
+    i-=1
