@@ -112,7 +112,7 @@ while i>=0:
     i-=1
     sum=sum+int(no[i])
 print(sum)
------------------------------------- '''
+------------------------------------
 # palindrome
 
 s=input('Enter a string:')
@@ -122,4 +122,14 @@ if s==s1:
     print('Palindrome')
 else:
     print('Not Palindrome')
+--------------------------------------'''
+# reverse number
+no=1234
+c=0
+while no>0:
+    print(no%10)
+    no//=10
+    c+=1
+print(c)
+
 
