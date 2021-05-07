@@ -45,4 +45,22 @@ for x in range(10,1):
 for x in range(10,1,-1):
     print(x,end=' ')
 # 10 9 8 7 6 5 4 3 2
-----------------------------------"""
+----------------------------------
+for x in [1,2,3,4,5,6]:
+    print(x,end=' ')
+# 1 2 3 4 5 6
+----------------------------------
+# sum of 10 numbers
+total=0
+for n in range(10+1):
+    total+=n
+print(total)
+-------------------------------
+# sum of N numbers
+n=int(input('Enter range :'))
+total=0
+for l in range(n+1):
+    total+=l
+print(total)
+
+------------------------------"""
