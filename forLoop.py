@@ -131,3 +131,16 @@ for x in range(6):
         print(y,end='')
     print()
 ---------------------------"""
+# nested While
+i=1
+
+while i<=5:
+    j=1
+    while j<=5:
+        print(j,end=' ')
+
+        j+=1
+    print()
+    i+=1
+else:
+    print('Program terminated')
