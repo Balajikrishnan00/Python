@@ -165,14 +165,18 @@ print('reverse %i'%reverse)
 print('Sum Of Digits %i'%sumofDigits)
 print('Count of Digit %i'%count)
 ----------------------------------'''
+# Armstrong number
 import math
-no=153
+no=int(input('Enter Armstrong number:'))
+n1=no
 sum=0
 while no>0:
     r=no%10
     n=int(math.pow(r,3))
     no//=10
     sum=sum+n
-
-print(sum)
+if n1==sum:
+    print('Armstrong number')
+else:
+    print('Not Armstrong Number')
 
