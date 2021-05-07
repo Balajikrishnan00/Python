@@ -145,12 +145,26 @@ while no>0:
 print('Sum of Add Digits %i '%sum)
 print('count of Digits %i'%count)
 ------------------------------------'''
-no=1234
-sum=0
+no=1221
+n1=no
+reverse=0
+sumofDigits=0
+count=0
 while no>0:
     r=no%10
-    sum=sum*10+r
+    reverse=reverse*10+r
+    sumofDigits=sumofDigits+r
     no=no//10
-print(sum)
+    count+=1
+if n1==reverse:
+    print('Palindrome ')
+else:
+    print('not Palindrome')
+print('The Number is %i'%n1)
+print('reverse %i'%reverse)
+print('Sum Of Digits %i'%sumofDigits)
+print('Count of Digit %i'%count)
+
+
 
 
