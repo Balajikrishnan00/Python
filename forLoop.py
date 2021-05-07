@@ -99,7 +99,7 @@ for i in range(1,n+1):
             break
     else:
         print('%i Prime'%i,end='')
--------------------------------------"""
+-------------------------------------
 # reverse string
 name='balaji krishnan'
 r=len(name)-1
@@ -107,7 +107,15 @@ print(r)
 
 
 for n in range(r,-1,-1):
-    print(name[n])
-
-
+    print(name[n],end=' ')
+--------------------------------
+sentence='Life is Like a Mirror'
+print(sentence[::2])
+---------------------------------"""
+word='amma'
+pali=word[::-1]
+if word == pali:
+    print('Palindrome')
+else:
+    print('Not Palindrome')
 
