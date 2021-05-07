@@ -122,7 +122,7 @@ if s==s1:
     print('Palindrome')
 else:
     print('Not Palindrome')
---------------------------------------'''
+--------------------------------------
 # reverse number
 no=1234
 c=0
@@ -131,5 +131,17 @@ while no>0:
     no//=10
     c+=1
 print(c)
+------------------------------------------'''
+# adition of digits
 
+no=int(input('Enter a Number'))
+count=0
+sum=0
+while no>0:
+    d=no%10
+    sum+=d
+    no//=10
+    count+=1
+print('Sum of Add Digits %i '%sum)
+print('count of Digits %i'%count)
 
