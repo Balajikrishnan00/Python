@@ -84,12 +84,11 @@ print(word,end=' ')
 n= int(input('Enter a Number:'))
 for x in range(2,n):
     if n%x==0:
-
-        print('Not Prime number')
+        print('Not Prime')
         break
+
 else:
     print(n,'Prime')
-
 
 
 
