@@ -6,7 +6,7 @@ while s<=10:
     print(n1,end=' ')
     n1+=3
     s+=1
-
+---------------------------------
 #2p
 count=20
 n=3
@@ -14,7 +14,7 @@ while 1<=count:
     print(n,end=' ')
     n+=3
     count-=1
-
+----------------------------------
 #3p
 # 18,18,36,54,72,90,108,126
 #5,5,10,15
@@ -37,6 +37,7 @@ for x in sum1:
     for y in sum2:
         if x==y:
             print(x)
+-----------------------------
 #4p
 # LCM
 no1=2
@@ -48,7 +49,7 @@ if big%no1==0 and big%no2==0:
     print('LCM ',big)
 
 print('ji')
-
+----------------------------------
 #5p
 no1=int(input('Enter No1:'))
 no2=int(input('Enter No2:'))
@@ -59,7 +60,7 @@ while True:
         print('LCM',big)
         break
     big+=1
-
+-----------------------------------
 #6p fact
 n=5
 fact=1
@@ -68,7 +69,7 @@ while n>0:
     #print(fact)
     n-=1
 print(fact)
-'''
+-----------------------------------
 #7p Prime number
 
 no=int(input('Enter a number:'))
@@ -80,3 +81,24 @@ while i<no:
     i+=1
 else:
     print('prime')
+-----------------------------------
+# Reverse string
+#8.1P
+no=123345678
+
+no=str(no)
+print(type(no))
+
+no=int(no[::-1])
+print(int(no))
+print(type(no))
+----------------------------------------
+'''
+
+# 8.2 p
+no=1234
+numbers=str(no)
+i=len(numbers)-1
+while i>=0:
+    print(numbers[i],end='')
+    i-=1
