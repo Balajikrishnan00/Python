@@ -79,9 +79,10 @@ for x in sentance:
         word+=1
 word+=1
 print(word,end=' ')
-----------------------------"""
+----------------------------
 # Prime Number
 n= int(input('Enter a Number:'))
+print(2,end=' ')
 for x in range(2,n):
     if n%x==0:
         print('Not Prime')
@@ -89,13 +90,14 @@ for x in range(2,n):
 
 else:
     print(n,'Prime')
-
-
-
-
-
-
-
-
+-----------------------------"""
+n=100
+for i in range(1,n+1):
+    for j in range(2,i):
+        if i%j==0:
+            #print(" %i not Prime"%i)
+            break
+    else:
+        print('%i Prime'%i,end='')
 
 
