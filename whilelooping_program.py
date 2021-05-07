@@ -194,7 +194,7 @@ if n1==ams:
     print('Ams')
 else:
     print('Not Ams')
------------------------- '''
+------------------------
 n=81
 n1=n
 pow=len(str(n))
@@ -208,4 +208,18 @@ while n>0:
     n3=sum**pow
 if n1==n3:
     print('n1=%i n3=%i'%(n1,n3))
+--------------------------------'''
+# fibonacci series
+# o/p 0 1 1 2 3 5 8 13
 
+range=int(input('Enter Range of Number:'))
+f=0
+i=0
+s=1
+print(f,end=' ')
+print(s,end=' ')
+while i<range:
+    f=s
+    s=f+s
+    print(f+s)
+    i+=1
