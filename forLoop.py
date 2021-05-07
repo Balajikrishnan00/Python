@@ -144,7 +144,7 @@ while i<=5:
     i+=1
 else:
     print('Program terminated')
----------------------------------"""
+---------------------------------
 i=5
 
 while i>=0:
@@ -154,3 +154,13 @@ while i>=0:
         j+=1
     print()
     i-=1
+---------------------------------"""
+row=1
+while row<=3:
+    col=1
+    while col<=3:
+        print(row,end=' ')
+        col+=1
+    print()
+    row+=1
+
