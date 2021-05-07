@@ -180,7 +180,7 @@ if n1==sum:
     print('Armstrong number')
 else:
     print('Not Armstrong Number')
--------------------------------------'''
+-------------------------------------
 #  abcd... = an + bn + cn + dn + ...
 num=153
 pow=len(str(num))
@@ -194,8 +194,18 @@ if n1==ams:
     print('Ams')
 else:
     print('Not Ams')
+------------------------ '''
+n=81
+n1=n
+pow=len(str(n))
+sum=0
+n3=0
+while n>0:
+    r=n%10
+    sum=sum+r
 
-
-
-
+    n=n//10
+    n3=sum**pow
+if n1==n3:
+    print('n1=%i n3=%i'%(n1,n3))
 
