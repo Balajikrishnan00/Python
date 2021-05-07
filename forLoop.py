@@ -8,6 +8,8 @@ for n in name:
 for x in range(10+1):
     print(x,end=' ')
 -----------------"""
+for x in range(100,120+1):
+    print(x,end=' ')
 
 
 
