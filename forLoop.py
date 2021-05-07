@@ -90,7 +90,7 @@ for x in range(2,n):
 
 else:
     print(n,'Prime')
------------------------------"""
+-----------------------------
 n=100
 for i in range(1,n+1):
     for j in range(2,i):
@@ -99,5 +99,15 @@ for i in range(1,n+1):
             break
     else:
         print('%i Prime'%i,end='')
+-------------------------------------"""
+# reverse string
+name='balaji krishnan'
+r=len(name)-1
+print(r)
+
+
+for n in range(r,-1,-1):
+    print(name[n])
+
 
 
