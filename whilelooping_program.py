@@ -93,8 +93,6 @@ no=int(no[::-1])
 print(int(no))
 print(type(no))
 ----------------------------------------
-'''
-
 # 8.2 p
 no=1234
 numbers=str(no)
@@ -102,3 +100,17 @@ i=len(numbers)-1
 while i>=0:
     print(numbers[i],end='')
     i-=1
+----------------------------------
+# 9.1 sum of Digit
+
+
+no= '1234' #input('Enter a number:')
+sum=0
+i=len(no)-1
+while i>=0:
+    print(no[i])
+    i-=1
+    sum=sum+int(no[i])
+print(sum)
+--------------------------------------------
+'''
