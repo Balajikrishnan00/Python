@@ -144,7 +144,7 @@ while no>0:
     count+=1
 print('Sum of Add Digits %i '%sum)
 print('count of Digits %i'%count)
-------------------------------------'''
+------------------------------------
 no=1221
 n1=no
 reverse=0
@@ -164,7 +164,15 @@ print('The Number is %i'%n1)
 print('reverse %i'%reverse)
 print('Sum Of Digits %i'%sumofDigits)
 print('Count of Digit %i'%count)
+----------------------------------'''
+import math
+no=153
+sum=0
+while no>0:
+    r=no%10
+    n=int(math.pow(r,3))
+    no//=10
+    sum=sum+n
 
-
-
+print(sum)
 
