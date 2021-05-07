@@ -131,8 +131,8 @@ while no>0:
     no//=10
     c+=1
 print(c)
-------------------------------------------'''
-# adition of digits
+------------------------------------------
+# sum of digits
 
 no=int(input('Enter a Number'))
 count=0
@@ -144,4 +144,13 @@ while no>0:
     count+=1
 print('Sum of Add Digits %i '%sum)
 print('count of Digits %i'%count)
+------------------------------------'''
+no=1234
+sum=0
+while no>0:
+    r=no%10
+    sum=sum*10+r
+    no=no//10
+print(sum)
+
 
