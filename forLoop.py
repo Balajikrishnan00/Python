@@ -111,11 +111,23 @@ for n in range(r,-1,-1):
 --------------------------------
 sentence='Life is Like a Mirror'
 print(sentence[::2])
----------------------------------"""
+---------------------------------
 word='amma'
 pali=word[::-1]
 if word == pali:
     print('Palindrome')
 else:
     print('Not Palindrome')
+-------------------------------
+# fibonacci series Topic bending---
 
+f,s=-1,1
+t=f+s
+#
+----------------------------
+# nested Loop
+for x in range(6):
+    for y in range(x):
+        print(y,end='')
+    print()
+---------------------------"""
