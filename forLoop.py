@@ -70,7 +70,7 @@ total=1
 for x in range(1,n+1):
     total*=x
 print(total)
------------------------------"""
+-----------------------------
 # prime Number
 sentance='i am a very bad boy '.strip()
 word=0
@@ -79,6 +79,24 @@ for x in sentance:
         word+=1
 word+=1
 print(word,end=' ')
+----------------------------"""
+# Prime Number
+n= int(input('Enter a Number:'))
+for x in range(2,n):
+    if n%x==0:
+
+        print('Not Prime number')
+        break
+else:
+    print(n,'Prime')
+
+
+
+
+
+
+
+
 
 
 
