@@ -71,3 +71,12 @@ while row>=1:
     print()
     row-=1
 ------------------------------"""
+row=0
+while row<=5:
+    col=0
+    while col<=row:
+        print(col+row,end='')
+        col+=1
+    print()
+    row+=1
+
