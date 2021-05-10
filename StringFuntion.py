@@ -78,3 +78,8 @@ name=s[:s.index('@gmail')]
 print(name)
 print(s.index('@gmail'))
 -----------------------------------"""
+s='python is very easy'
+print(s.startswith('python'))
+print(s.endswith('python'))
+print(s.endswith('easy'))
+
