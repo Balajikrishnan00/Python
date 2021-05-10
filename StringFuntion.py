@@ -114,5 +114,18 @@ for l in name:
         break
 else:
     print('Perfect')
+    islower()
+    isupper()
+
 -----------------------"""
+# formatting String
+name='Raja'
+salary=20000
+age=55
+print('my name is',name,'i am',age,'years old','my salary is RS',salary)
+print('my name is %s i am %d years old my salary is RS%.2f'%(name,age,salary))
+print('my name is {} i am {} years old my salary is RS{}'.format(name,age,salary))
+print(f'my name is{name},i am {age} years old and my salary is RS{salary}')
+
+
 
