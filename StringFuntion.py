@@ -14,7 +14,7 @@ for w in range(0,len(sen)):
         print(w)
         c+=1
 print(c)
--------------------------------"""
+-------------------------------
 name='raja'
 n1=name.replace('r','k')
 #print(n1)
@@ -23,7 +23,47 @@ print(id(name))
 sen='your are not best'
 sen2=sen.replace('not','the')
 print(sen2)
+-----------------------------"""
+s='python is very easy'
+#print(s.upper())
+#print(s.lower())
+#print(s.capitalize())
+#print(s.title())
+#print(s.swapcase())
+#print(s[0].upper()+s[1:])
+#print(s[::-1].upper())
+Email=input('Enter Your Email:')
 
 
+username=Email[:Email.index('@')]
+host=Email[Email.index('@')+1:Email.index('.com')]
+length=len(username) #16
+lower=[]
+upper=[]
+special=[]
+number=[]
+i=0
+
+while i<length:
+    if username[i]>='0' and  username[i] <='9': # for Number only Ex: 0 to 9
+        number.append(username[i])
+
+    elif username[i] >= 'a' and username[i] <= 'z': # Lowercase only
+        lower.append(username[i])
+    elif username[i]>='A' and  username[i] <='Z': # Uppercase only
+        upper.append(username[i])
+    else:
+        special.append(username[i])
+    i+=1
+print('lower',lower)
+print('upper',upper)
+print('number',number)
+print('special',special)
+#user1=''.join(u1)
+#print(user1)
+#print(user1.lower())
+#print(type(user1))
+#print('Welcome! Mr.'+user1)
+#print('Your Host is',host+'.com')
 
 
