@@ -14,7 +14,7 @@ while i<max:
         s3+=s2[i]
     i+=1
 print(s3)
-------------------------"""
+------------------------
 alpha=''
 dight=''
 s='balajikrishnan123@gmail.com'
@@ -25,4 +25,22 @@ for l in s:
         dight+=l
 print(alpha)
 print(dight)
+-------------------------"""
+s=input('enter 1 char and 1 number ex(i*1):')
+
+let=''
+
+for l in s:
+    if l.isalpha():
+        let+=l
+    if l.isdigit():
+        n=int(l)
+#print('balaji'*5)
+#print(type('balaji'))
+#print(type(let))
+print(let*n)
+
+
+
+
 
