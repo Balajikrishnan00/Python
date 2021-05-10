@@ -77,9 +77,33 @@ s='balajikrishnan1234@gmail.com'
 name=s[:s.index('@gmail')]
 print(name)
 print(s.index('@gmail'))
------------------------------------"""
-s='python is very easy'
-print(s.startswith('python'))
-print(s.endswith('python'))
-print(s.endswith('easy'))
+-----------------------------------
+s1='python is very easy'
+s2='python'
+s3='1234567890'
+#print(s.startswith('python'))
+#print(s.endswith('python'))
+#print(s.endswith('easy'))
+#print(s.isalpha())
+#print(s1.isalpha())
+#print(s.isdigit())
 
+# num
+mobile='1234567890'
+for let in mobile:
+    if not (let>='0' and let<='9'):
+        print('not')
+        break
+else:
+    print('mob num')
+-------------------------
+# alpha
+alphabet='balajikrishnan'
+for l in alphabet:
+    if not (l>='a' and l<='z'):
+        print('not alpha')
+        break
+else:
+    print('alpha')
+
+------------------------"""
