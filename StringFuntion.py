@@ -15,3 +15,15 @@ for w in range(0,len(sen)):
         c+=1
 print(c)
 -------------------------------"""
+name='raja'
+n1=name.replace('r','k')
+#print(n1)
+print(id(name.replace('r','m')))
+print(id(name))
+sen='your are not best'
+sen2=sen.replace('not','the')
+print(sen2)
+
+
+
+
