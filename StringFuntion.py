@@ -117,7 +117,7 @@ else:
     islower()
     isupper()
 
------------------------"""
+-----------------------
 # formatting String
 name='Raja'
 salary=20000
@@ -133,6 +133,24 @@ print('my name is {1} i am {2} years old my salary is RS{0}'.format(salary,name,
 print('my name is {a} i am {b} years old my salary is RS{c}'.format(a=name,b=age,c=salary))
 
 print(f'my name is {name},i am {age} years old my salary is RS{salary}')
+-------------------------------------
+s1='balaji'
+s2='krishnan123'
+i=0
+s3=''
 
+if len(s1)>len(s2):
+    max=len(s1)
+else:
+    max=len(s2)
 
-
+print(max)
+while i<max:
+    if i<len(s1):
+        s3+=s1[i]
+    if i<len(s2):
+        s3=s3+s2[i]
+    i+=1
+else:
+    print(s3)
+----------------------"""
