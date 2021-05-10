@@ -23,7 +23,7 @@ print(id(name))
 sen='your are not best'
 sen2=sen.replace('not','the')
 print(sen2)
------------------------------"""
+-----------------------------
 s='python is very easy'
 #print(s.upper())
 #print(s.lower())
@@ -66,4 +66,10 @@ print('special',special)
 #print('Welcome! Mr.'+user1)
 #print('Your Host is',host+'.com')
 
-
+OP
+Enter Your Email:balajiKrishnan123#$%@gmail.com
+lower ['b', 'a', 'l', 'a', 'j', 'i', 'r', 'i', 's', 'h', 'n', 'a', 'n']
+upper ['K']
+number ['1', '2', '3']
+special ['#', '$', '%']
+--------------------------------------"""
