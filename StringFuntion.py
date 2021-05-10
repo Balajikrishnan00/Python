@@ -106,4 +106,13 @@ for l in alphabet:
 else:
     print('alpha')
 
-------------------------"""
+------------------------
+name=input('Enter Your Name \"Capital\":')
+for l in name:
+    if not (l>="A" and l<='Z'):
+        print('Not in Capital!')
+        break
+else:
+    print('Perfect')
+-----------------------"""
+
