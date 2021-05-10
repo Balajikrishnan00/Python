@@ -123,9 +123,16 @@ name='Raja'
 salary=20000
 age=55
 print('my name is',name,'i am',age,'years old','my salary is RS',salary)
+
 print('my name is %s i am %d years old my salary is RS%.2f'%(name,age,salary))
+
 print('my name is {} i am {} years old my salary is RS{}'.format(name,age,salary))
-print(f'my name is{name},i am {age} years old and my salary is RS{salary}')
+
+print('my name is {1} i am {2} years old my salary is RS{0}'.format(salary,name,age))
+
+print('my name is {a} i am {b} years old my salary is RS{c}'.format(a=name,b=age,c=salary))
+
+print(f'my name is {name},i am {age} years old my salary is RS{salary}')
 
 
 
