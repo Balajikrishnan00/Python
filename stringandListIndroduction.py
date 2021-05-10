@@ -35,10 +35,11 @@ for l in s:
         let+=l
     if l.isdigit():
         n=int(l)
+        print(let * n)
 #print('balaji'*5)
 #print(type('balaji'))
 #print(type(let))
-print(let*n)
+#print(let*n)
 
 
 
