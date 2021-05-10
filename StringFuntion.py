@@ -35,7 +35,7 @@ s='python is very easy'
 Email=input('Enter Your Email:')
 
 
-username=Email[:Email.index('@')]
+username=Email[:Email.index('@')]   # @gmail,@yahoo,@outlook,@hot
 host=Email[Email.index('@')+1:Email.index('.com')]
 length=len(username) #16
 lower=[]
@@ -72,4 +72,9 @@ lower ['b', 'a', 'l', 'a', 'j', 'i', 'r', 'i', 's', 'h', 'n', 'a', 'n']
 upper ['K']
 number ['1', '2', '3']
 special ['#', '$', '%']
---------------------------------------"""
+--------------------------------------
+s='balajikrishnan1234@gmail.com'
+name=s[:s.index('@gmail')]
+print(name)
+print(s.index('@gmail'))
+-----------------------------------"""
