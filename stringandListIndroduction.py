@@ -25,7 +25,7 @@ for l in s:
         dight+=l
 print(alpha)
 print(dight)
--------------------------"""
+-------------------------
 s=input('enter 1 char and 1 number ex(i*1):')
 
 let=''
@@ -40,8 +40,20 @@ for l in s:
 #print(type('balaji'))
 #print(type(let))
 #print(let*n)
-
-
+---------------------"""
+# LIST=[]
+groceryList=[]
+print(type(groceryList))
+print(id(groceryList))
+groceryList.append('Red chilly')
+print(id(groceryList))
+markList=[55,34,56,78,96,43]
+name='balajikrishnan'
+n1=list(name)
+n2=''.join(n1)
+print(n2)
+l2=list(range(5))
+print(l2)
 
 
 
