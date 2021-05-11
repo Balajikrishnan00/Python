@@ -40,7 +40,7 @@ for l in s:
 #print(type('balaji'))
 #print(type(let))
 #print(let*n)
----------------------"""
+---------------------
 # LIST=[]
 groceryList=[]
 print(type(groceryList))
@@ -54,6 +54,16 @@ n2=''.join(n1)
 print(n2)
 l2=list(range(5))
 print(l2)
-
-
-
+-------------------------"""
+sen='python is very easy'.split()
+date='30-12-2020'.split('-')
+#print(sen[0][0])
+#print(sen[1][0])
+for x in date:
+    print(x)
+sen1='hi i am balajikrishnan'.split(' ')
+c=0
+for x in sen1:
+    c+=1
+print(c)
+print(len(sen1))
