@@ -75,7 +75,7 @@ print(sen1)
 for x in sen1:
     lis1.append(list(x))
 print(lis1)
-------------------"""
+------------------
 lis1=[['hi'],['i'],['am']]
 print(lis1[1][0])
 print(lis1[0][0])
@@ -88,5 +88,16 @@ for n in name:
 #print(name)
 print(lis2)
 print(lis2[::-1])
-
-
+-------------------
+num='1234567890'
+n=[]
+for x in num:
+   n.append(x)
+n[0]=777
+n[1]=88
+print(n)
+i=0
+while i<len(n):
+    print(n[i])
+    i+=1
+-----------------------"""
