@@ -101,3 +101,22 @@ while i<len(n):
     print(n[i])
     i+=1
 -----------------------"""
+l=[10,20,30,40,50,60,70,80,90,100]
+# for
+for i in l:
+    if i%20==0:
+        print(i,end=' ')
+l2=['a','b','c']
+# step operator
+print()
+print(l[1::2])
+# while using
+
+i=0
+while i<len(l):
+    if l[i]%20==0:
+        print(l[i],end=' ')
+    i+=1
+print(l2*3)
+# list is a datatype
+# list can contain
