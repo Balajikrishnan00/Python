@@ -100,7 +100,7 @@ i=0
 while i<len(n):
     print(n[i])
     i+=1
------------------------"""
+-----------------------
 l=[10,20,30,40,50,60,70,80,90,100]
 # for
 for i in l:
@@ -120,3 +120,16 @@ while i<len(l):
 print(l2*3)
 # list is a datatype
 # list can contain
+------------------------"""
+l1=[1,2,3]
+l2=['a','b','c']
+ll=[l1,l2]
+ll2=[[l1,l2]]
+print(ll)
+l3=l1+l2
+
+print(l3)
+print(type(l3))
+print(len(l3))
+print(len(ll))
+print(ll)
