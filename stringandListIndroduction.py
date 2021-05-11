@@ -54,7 +54,7 @@ n2=''.join(n1)
 print(n2)
 l2=list(range(5))
 print(l2)
--------------------------"""
+-------------------------
 sen='python is very easy'.split()
 date='30-12-2020'.split('-')
 #print(sen[0][0])
@@ -67,3 +67,26 @@ for x in sen1:
     c+=1
 print(c)
 print(len(sen1))
+----------------------------
+lis1=[]
+sen1='hi i am balaji'.split()
+print(sen1)
+
+for x in sen1:
+    lis1.append(list(x))
+print(lis1)
+------------------"""
+lis1=[['hi'],['i'],['am']]
+print(lis1[1][0])
+print(lis1[0][0])
+print(lis1[2][0])
+name='balajikrishnan'
+lis2=[]
+for n in name:
+    lis2.append(n)
+
+#print(name)
+print(lis2)
+print(lis2[::-1])
+
+
