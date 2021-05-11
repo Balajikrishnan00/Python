@@ -120,7 +120,7 @@ while i<len(l):
 print(l2*3)
 # list is a datatype
 # list can contain
-------------------------"""
+------------------------
 l1=[1,2,3]
 l2=['a','b','c']
 ll=[l1,l2]
@@ -148,3 +148,13 @@ for x in ll:
             alpha+=y
 print(alpha,type(alpha))
 print(num,type(num))
+--------------------------
+L=[10,20,30,40,50,60]
+for index, value in enumerate(L):
+#for x in L1:
+    if value == 40:
+        L[index] = 'abc'
+        print(index)
+        print(value)
+print(L)
+---------------------------"""
