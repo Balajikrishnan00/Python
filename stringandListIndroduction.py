@@ -126,10 +126,25 @@ l2=['a','b','c']
 ll=[l1,l2]
 ll2=[[l1,l2]]
 print(ll)
-l3=l1+l2
+l3= l1+l2
 
 print(l3)
 print(type(l3))
 print(len(l3))
 print(len(ll))
 print(ll)
+print(ll[0])
+print(ll[0][0])
+print(len(ll[0]))
+alpha=''
+num=''
+for x in ll:
+    for y in x:
+
+        #print(y,type(y))
+        if type(y)==int:
+            num+=str(y)
+        if type(y)==str:
+            alpha+=y
+print(alpha,type(alpha))
+print(num,type(num))
