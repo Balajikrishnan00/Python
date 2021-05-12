@@ -46,4 +46,23 @@ for x in range(1,11):
     if x%2==0:
         lis.append(x*x)
 print(lis)
----------------------------"""
+---------------------------
+l=[1,3,4,3,5,6,7,8,9]
+l.insert(3,50)
+print(l)
+-------------------------
+l1=[1,2,3,4,5,6,7,8,9,0]
+l2=['a','b','c','d']
+l1.extend(l2)
+print(l1)
+print(l2)
+l2.extend(l1)
+print(l2)
+l3=[1,2,3,4]
+l3.extend(l3)
+print(l3)
+l4=[]
+l4.extend('Balaji')
+print(l4)
+-----------------------"""
+# vid 32.00
