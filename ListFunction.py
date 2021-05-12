@@ -1,2 +1,10 @@
-no=64
-print(chr(no+1))
+"""
+#no=64
+no='A5'
+#print(chr(no+1))
+no2=int(no[1])+65
+#print(chr(no2))
+print(no2)
+no3=no[0]+chr(no2)
+print(no3)
+----------------------------"""
