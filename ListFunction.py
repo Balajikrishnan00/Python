@@ -142,7 +142,7 @@ while i>=0:
 #   ijalab
 #   ma
 #   i
--------------------------"""
+-------------------------
 sen='wish you a very happy New year'
 l1=list(sen)
 l2=sen.split()
@@ -160,3 +160,9 @@ while i<=len(l2)-1:
 
     i+=1
 print(l3)
+----------------------------"""
+sen='wish you a very happy New year'
+l1=list(sen)
+print(l1)
+l2=''.join(l1)
+print(l2)
