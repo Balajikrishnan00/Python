@@ -109,12 +109,31 @@ while i>=0:
     i-=1
 print(l1)
 print(l2)
-----------------------------"""
+----------------------------
 name='balaji'
-l1,l2=[],[]
-l1.extend(name)
+l2=[]
+l1=list(name)
 #print(l1)
 for x in range(0,len(l1)):
     l2.append(l1.pop())
+l1=l2
+print(l1)
 print(l2)
+--------------------------"""
+sen='i am balaji krishnan'
+l1=sen.split()
+print(l1)
+print(l1[::-1])
+i=len(l1)-1
+
+while i>=0:
+    #print(l1[i])
+    y=len(l1[i])-1
+    while y>=0:
+        print(l1[i][y],end='')
+        y-=1
+    #print(y)
+    #while
+    print()
+    i-=1
 
