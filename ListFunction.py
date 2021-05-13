@@ -64,7 +64,7 @@ print(l3)
 l4=[]
 l4.extend('Balaji')
 print(l4)
------------------------"""
+-----------------------
 l=[]
 l.extend('balaji')
 print(l)
@@ -72,3 +72,17 @@ l.extend([1,2,3,4,5])
 print(l)
 l.remove(1)
 print(l)
+l.pop(2)
+print(l)
+l1=[]
+l1.append('balaji')
+print(l1)
+l1.extend('balaji')
+print(l1)
+l1.pop()
+print(l1)
+print(l1.pop())
+print(l1)
+l1.pop(1)
+print(l1)
+---------------------------"""
