@@ -106,3 +106,18 @@ for i in range(len(a)):
             total=total+a[i][j]
 print(total)
 -----------------------------------"""
+total=0
+a=[[10,20,30],[40,50,60],[70,80,90]]
+i=0
+while i<=len(a)-1:
+    #print(i,end='-')
+    #i+=1
+    j=0
+    while j<len(a[i]):
+        if i==j:
+            print(a[i][j])
+            total=total+a[i][j]
+        #print(j,end=' ')
+        j+=1
+    i+=1
+print(total)
