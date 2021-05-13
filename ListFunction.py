@@ -160,9 +160,28 @@ while i<=len(l2)-1:
 
     i+=1
 print(l3)
-----------------------------"""
+----------------------------
 sen='wish you a very happy New year'
 l1=list(sen)
 print(l1)
 l2=''.join(l1)
 print(l2)
+-----------------------------
+user=input('Enter a days')
+
+
+if (user=='Sun' or user=='sun') or (user=='Mon' or user == 'mon') or (user=='Tues' or user== 'tues'):
+
+    print(user.upper()+'DAY')
+else:
+    print('wrong')
+---------------------------"""
+input='sun mon tues wednes thus fri satur'
+w1=input.split()
+#print(w1)
+w2=[]
+for w in w1:
+    w2.append(w.title()+'Day')
+print(w2)
+output=' '.join(w2)
+print(output)
