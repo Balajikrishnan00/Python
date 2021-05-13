@@ -153,7 +153,10 @@ print(l2)
 i=0
 #2 method -
 while i<=len(l2)-1:
+    if i==0 or i%2==0:
+        l3.append(l2[i][::-1])
+    else:
+        l3.append(l2[i])
 
-    l3.append(l2[i][::-1])
-    i+=2
+    i+=1
 print(l3)
