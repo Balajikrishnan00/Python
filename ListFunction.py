@@ -119,7 +119,7 @@ for x in range(0,len(l1)):
 l1=l2
 print(l1)
 print(l2)
---------------------------"""
+--------------------------
 sen='i am balaji krishnan'
 l1=sen.split()
 print(l1)
@@ -142,3 +142,18 @@ while i>=0:
 #   ijalab
 #   ma
 #   i
+-------------------------"""
+sen='wish you a very happy New year'
+l1=list(sen)
+l2=sen.split()
+l3=[]
+print(l1)
+print(l2)
+# 1 method - print(l2[::2])
+i=0
+#2 method -
+while i<=len(l2)-1:
+
+    l3.append(l2[i][::-1])
+    i+=2
+print(l3)
