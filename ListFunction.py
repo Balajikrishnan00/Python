@@ -136,4 +136,9 @@ while i>=0:
     #while
     print()
     i-=1
-
+#   ['i', 'am', 'balaji', 'krishnan']
+#   ['krishnan', 'balaji', 'am', 'i']
+#   nanhsirk
+#   ijalab
+#   ma
+#   i
