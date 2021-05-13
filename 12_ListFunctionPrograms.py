@@ -85,7 +85,7 @@ for x in a:
 a=[[10,20,30],[40,50,60],[70,80,90]]
 for x in range(len(a)):
     print(a[x][x])
------------------------"""
+-----------------------
 
 a=[[10,20,30],[40,50,60],[70,80,90]]
 for i in range(len(a)):
@@ -97,4 +97,12 @@ for i in range(len(a)):
         #print()
 
             print(a[i][j])
-
+-------------------------------
+a=[[10,20,30],[40,50,60],[70,80,90]]
+total=0
+for i in range(len(a)):
+    for j in range(len(a[i])):
+        if i==j:
+            total=total+a[i][j]
+print(total)
+-----------------------------------"""
