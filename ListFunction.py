@@ -97,7 +97,7 @@ while len>=i:
     l1.append(l[len])
     len-=1
 print(l1)
-------------------------------"""
+------------------------------
 name=input('Enter a name:')
 l1=[]
 l2=[]
@@ -108,5 +108,13 @@ while i>=0:
     l2.append(l1[i])
     i-=1
 print(l1)
+print(l2)
+----------------------------"""
+name='balaji'
+l1,l2=[],[]
+l1.extend(name)
+#print(l1)
+for x in range(0,len(l1)):
+    l2.append(l1.pop())
 print(l2)
 
