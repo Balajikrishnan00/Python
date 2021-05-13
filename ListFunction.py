@@ -65,4 +65,10 @@ l4=[]
 l4.extend('Balaji')
 print(l4)
 -----------------------"""
-# vid 32.00
+l=[]
+l.extend('balaji')
+print(l)
+l.extend([1,2,3,4,5])
+print(l)
+l.remove(1)
+print(l)
