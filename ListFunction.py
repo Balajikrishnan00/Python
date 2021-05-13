@@ -85,14 +85,16 @@ print(l1.pop())
 print(l1)
 l1.pop(1)
 print(l1)
----------------------------
+---------------------------"""
 l=[10,20,30,40,60,50]
 #l.reverse()
 print(l)
 print(l[::-1])
 len=len(l)-1
 i=0
+l1=[]
 while len>=i:
-    print(l[len],end=' ')
+    l1.append(l[len])
     len-=1
----------------------------"""
+print(l1)
+
