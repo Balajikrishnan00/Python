@@ -90,7 +90,11 @@ for x in range(len(a)):
 a=[[10,20,30],[40,50,60],[70,80,90]]
 for i in range(len(a)):
     #print('index i',i)
-    for j in range(len(a[i])):
-        print('index %i,%i'%(i,j),end='')
-        print()
-        print(a[i][j])
+    ll=a[i]
+    for j in range(len(ll)):
+        if i==j:
+            print('index %i,%i :'%(i,j),end='')
+        #print()
+
+            print(a[i][j])
+
