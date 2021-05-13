@@ -85,7 +85,7 @@ print(l1.pop())
 print(l1)
 l1.pop(1)
 print(l1)
----------------------------"""
+---------------------------
 l=[10,20,30,40,60,50]
 #l.reverse()
 print(l)
@@ -97,4 +97,16 @@ while len>=i:
     l1.append(l[len])
     len-=1
 print(l1)
+------------------------------"""
+name=input('Enter a name:')
+l1=[]
+l2=[]
+l1.extend(name)
+#print(l1)
+i=len(l1)-1
+while i>=0:
+    l2.append(l1[i])
+    i-=1
+print(l1)
+print(l2)
 
