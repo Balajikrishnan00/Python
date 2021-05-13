@@ -57,14 +57,31 @@ l2=l1[:]
 l2[2]=45
 print(l1)
 print(l2)
----------------------"""
+---------------------
 a=['balaji','krishnan']
 b=['balaji','krishnan']
 c=b
 
-print(a==b)
-print(a>b)
-print(a<b)
-print(a!=b)
-print(a is b)
-print(b is c)
+#print(a==b)
+#print(a>b)
+#print(a<b)
+#print(a!=b)
+#print(a is b)
+#print(b is c)
+print('balaji' in a)
+print(c)
+c.clear()
+print(c)
+----------------------
+a=[[10,20,30],[40,50,60],[70,80,90]]
+for x in a:
+    for y in x:
+        print(y,end=' ')
+    print()
+
+for x in a:
+    print(x)
+----------------------"""
+a=[[10,20,30],[40,50,60],[70,80,90]]
+for x in range(len(a)):
+    print(a[x][x])
