@@ -58,3 +58,13 @@ l2[2]=45
 print(l1)
 print(l2)
 ---------------------"""
+a=['balaji','krishnan']
+b=['balaji','krishnan']
+c=b
+
+print(a==b)
+print(a>b)
+print(a<b)
+print(a!=b)
+print(a is b)
+print(b is c)
