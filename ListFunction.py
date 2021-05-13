@@ -175,13 +175,46 @@ if (user=='Sun' or user=='sun') or (user=='Mon' or user == 'mon') or (user=='Tue
     print(user.upper()+'DAY')
 else:
     print('wrong')
----------------------------"""
+---------------------------
 input='sun mon tues wednes thus fri satur'
 w1=input.split()
 #print(w1)
 w2=[]
 for w in w1:
     w2.append(w.title()+'Day')
+print(w2)
+output=' '.join(w2)
+print(output)
+---------------------------
+input='sun mon tues wednes thus fri satur'
+w1=input.split()
+#print(w1)
+w2=[]
+for w in w1:
+    if w[0]=='t':
+        w2.append(w.title()+'Day')
+print(w2)
+output=' '.join(w2)
+print(output)
+---------------------------
+input='sun mon tues wednes thus fri satur'
+w1=input.split()
+#print(w1)
+w2=[]
+for w in w1:
+    if w[-1]=='s':
+        w2.append(w.title()+'Day')
+print(w2)
+output=' '.join(w2)
+print(output)
+-----------------------------"""
+input='sun mon tues wednes thus fri satur'
+w1=input.split()
+#print(w1)
+w2=[]
+for w in w1:
+    if len(w)>=4:
+        w2.append(w.title()+'Day')
 print(w2)
 output=' '.join(w2)
 print(output)
