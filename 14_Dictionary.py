@@ -25,4 +25,27 @@ d.clear()
 print(d)
 del d
 print(d)
-------------------------------------"""
+------------------------------------
+d={123:'balaji',124:'krishnan',125:'siva',126:'shankar'}
+print(d)
+d1={}
+for x in range(5):
+
+    key=input('enter Key:')
+    value=input('enter Value:')
+    d1[key]=value
+print(d1)
+--------------------------------------
+d={123:'balaji',124:'krishnan',125:'siva',126:'shankar'}
+print(len(d))
+print(d.get(123))
+print(d.get(211))
+print(d[123])
+print(d.pop(123))
+print(d)
+#print(d.pop(123)) # key Error
+
+print(d.popitem())
+print(d)
+print(d.items())
+-----------------------------"""
