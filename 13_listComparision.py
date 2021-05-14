@@ -72,3 +72,10 @@ print(sum(t3))
 print(min(t3))
 print(max(t3))
 -------------------------"""
+a,b,c,d=10,20,30,40
+t=a,b,c,d   # tuple packing
+
+print(type(t))
+print(t)
+p,q,r,s=t # tuple unpacking
+print(p,q,r,s)
