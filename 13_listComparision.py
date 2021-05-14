@@ -45,7 +45,7 @@ for x in n1:
     #    print(x)
 n2=[x for x in n1 if x not in m2]
 print(n2)
-----------------------------------------
+----------------------------------------"""
 # Tuple
 t=(10,20,30,40)
 #print(type(t))
@@ -71,7 +71,3 @@ print(type(t3))
 print(sum(t3))
 print(min(t3))
 print(max(t3))
--------------------------"""
-a,b,c,d=10,20,30,40
-t=a,b,c,d
-print(t)
