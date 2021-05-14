@@ -21,3 +21,14 @@ for x in range(len(a)):
 print(a)
 print(n)
 ---------------------------------"""
+# list comprehension
+l1=[i  for i in range(6) if i%2==0]
+print(l1)
+
+ll2=[val for val in l1 if val%2==0]
+print(ll2)
+ll3=[i for i in range(10)]
+print(ll3)
+ll4=[val for val in ll3 if val%2==0]
+print(ll4)
+
