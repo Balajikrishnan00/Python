@@ -73,8 +73,90 @@ print(id(students))
 d2={}
 d2.update(d1)
 print(d2)
-________________________________"""
+________________________________
 d={'name':'balaji','age':25}
 print(d.get('name'))
 print(d.get('salary','Not Availble'))
 print(d.get('salary',0))
+----------------------------
+#1
+n=int(input('enter no of keys of dict:'))
+d1={}
+for i in range(n):
+    key=input('Enter a key:')
+    value=input('Enter a value:')
+    d1[key]=value
+print(d1)
+---------------------------------"
+#2
+d=eval(input('Enter a key & value:'))
+print(d) {'balaji':'krishnan'}
+-----------------------------
+d={}
+while True:
+   key=input('Key:')
+   value=input('value:')
+   y=input('Do you want to continuey/n:')
+   d[key]=value
+   if y=='y' or y=='Y':
+       continue
+   else:
+       break
+print(d)
+--------------------------
+# Error
+superMarket={}
+while True:
+    itemCode=int(input('Enter item:'))
+
+    #superMarket[itemCode]=
+    key1=input('Enter key1')
+    value1=input('Enter value1')
+    key2=input('Enter key2:')
+    value2=input('Enter value2')
+
+    superMarket[itemCode]={key1[value1],key2[value2]}
+    # superMarker={1108:{'brand':'kitkat','description':'made in italy'}
+    ans=input('Do you want continue y/n:')
+    if ans=='y':
+        continue
+    else:
+        break
+---------------------------------
+product={'apple':100,'grapes':200,'banana':50,'orange':60}
+discount=10 #%
+#print(discount)
+for key,value in product.items():
+    #print(key,value-discount)
+    #product[key]=product[key]
+    dis=product[key]*10/100
+    #product[key] = product[key]-dis
+    product[key]=product[key]-(product[key]//10)
+
+
+    #print(product[key])
+
+print(product)
+--------------------------------
+
+product={'apple':100,'grapes':200,'banana':50,'orange':60}
+#del product['apple']
+#product.pop('apple')
+print(product)
+key=product.keys()
+
+# Error
+for x in key:
+    if x=='apple':
+        print(x)
+        #print()
+        del product[x]
+print(product)
+---------------------------"""
+product={'apple':100,'grapes':200,'banana':50,'orange':60}
+for key,value in product.items():
+    if key=='grapes':
+        del product[key]
+        break# we
+
+print(product)
