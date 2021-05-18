@@ -227,7 +227,7 @@ print('--------------------------------------------')
 print(Ins,'Total:',t2,'SAR')
 for val in sorted(amount.values()):
     print(val)
----------------------------------------"""
+---------------------------------------
 l=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]
 key=32
 min=0
@@ -250,3 +250,27 @@ while min<=max:
 else:
     print('KEY ERROR!...')
     #print('KEY is Not Found',key)
+------------------------------
+Name=input('Enter Your Name:') # balaji
+d={}
+for l in Name:
+    val=d.get(l,0)+1
+    d[l]=val
+print(d)
+
+d2={'B': 1, 'A': 2, 'L': 1, 'J': 1, 'I': 1}
+print(d2.get('B')+1)
+--------------------------"""
+Name=input('Enter your Name:')
+d={}
+d2={}
+val=[]
+for l in Name:
+    v=d.get(l,0)+1
+    d[l]=v
+#print(d)
+for k,v in d.items():
+    d2[v]=k
+print(d2)
+print('max letter',d2[max(d2.keys())])
+
