@@ -106,6 +106,55 @@ print(40 in l)
 for x in l:
     if x==40:
         print('yes')
---------------------------------"""
+--------------------------------
 
 # binary search
+l=[i for i in range(1,32)]
+print(l)
+for x in l:
+    if x==31:
+        print('yes')
+        break
+else:
+    print('no')
+-------------------------
+# binary Search
+# suitable for sorted
+l=[1,2,3,4,5,6,13,14,15,16,9,10,11,12,18,19,20,21,22,23,24,17,7,8,25,26,27,28,29,30,31]
+key=int(input("Enter your key:")) # 21
+l2=sorted(l)
+min=0
+max=len(l2)-1
+avg=min+max//2
+#print(avg)
+#print(avg)
+print(l2)
+while True:
+    if key==l2[avg]:
+        #print(avg)
+        print('your number is present')
+        break
+    elif key<l2[avg]:
+        #print(avg)
+        max=avg-1
+        avg=min+max//2
+    else:
+        #key>l2[avg]:
+        #print(avg)
+        min=avg+1
+        avg=min+max//2
+-------------------------"""
+emp={'balaji':100,'kabilan':102,'Arun':103,'madhan':104}
+emp2={}
+empSalary={'balaji':10000,'kabilan':25000,'Arun':32000,'madhan':48000}
+
+for x,y in emp.items():
+    emp2[y]=x
+emp3={value:key for key,value in emp.items()}
+print(emp2)
+print(emp3)
+for name,salary in empSalary.items():
+
+    if salary>=25000:
+        print(name)
+
