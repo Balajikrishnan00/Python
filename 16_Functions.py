@@ -41,5 +41,9 @@ def calc(n1,n2):
     mul=n1*n2
     div=n1/n2
     return add,sub,mul,div
-print(calc(10,20))
+print(type(calc(10,20)))
 
+t=10,20,30,40,50
+print(t)
+t1,t2,t3,t4,t5=t
+print(t5)
