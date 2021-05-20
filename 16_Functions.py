@@ -57,7 +57,7 @@ def calc(n1,n2):
 for x in calc(30,20):
     print(x)
 
-------------------------"""
+------------------------
 # types of Arguments
  # postional arguments
  # keyword arguments
@@ -86,3 +86,32 @@ def wish(mgs='HI!'):
     print(f'{mgs},balaji')
 wish('welcome')
 wish()
+----------------
+def discount(default=10):
+    pass
+
+def studentList(name):
+    if name=='balaji' or name=='Balaji':
+        print('Welcome',name)
+        status=True
+    else:
+        print('Invaild Student Name!!!')
+
+studentList('balaji')
+------------------------
+import random
+def calculateTotal(*n):
+    total=0
+    for s in n:
+        total+=s
+    print(total)
+
+
+for l in range(0,5):
+
+    calculateTotal(random.randint(33,35))
+-------------------------"""
+def total(**kwargs):
+    for k,v in kwargs.items():
+        print(k,v)
+total(tamil=90,english=80,maths=87,social=78,science=58)
