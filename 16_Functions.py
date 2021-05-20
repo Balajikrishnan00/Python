@@ -112,6 +112,9 @@ for l in range(0,5):
     calculateTotal(random.randint(33,35))
 -------------------------"""
 def total(**kwargs):
+    total=0
     for k,v in kwargs.items():
-        print(k,v)
+        total+=v
+        #print(k,v)
+    print(total)
 total(tamil=90,english=80,maths=87,social=78,science=58)
