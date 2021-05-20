@@ -34,7 +34,7 @@ def odd_even(n):
 odd_even(5)
 for i in range(10):
     odd_even(i)
--------------"""
+-------------
 def calc(n1,n2):
     add=n1+n2
     sub=n1-n2
@@ -47,3 +47,42 @@ t=10,20,30,40,50
 print(t)
 t1,t2,t3,t4,t5=t
 print(t5)
+----------------
+def calc(n1,n2):
+    add=n1+n2
+    sub=n1-n2
+    mul=n1*n2
+    div=n1/n2
+    return add,sub,mul,div
+for x in calc(30,20):
+    print(x)
+
+------------------------"""
+# types of Arguments
+ # postional arguments
+ # keyword arguments
+ # dafalult arguments
+ # variable arguments
+
+# positional arguments
+def add(n1,n2):
+     pass
+
+#add(10,20)
+
+# keyword Arguments
+
+def wish(name,mgs):
+    print(f'Hi!,{name} {mgs}')
+wish(name='balaji',mgs='welcome')
+
+
+
+wish('balaji',mgs='HEllO')
+#wish(mgs='greet','balaji')
+
+#default argumets
+def wish(mgs='HI!'):
+    print(f'{mgs},balaji')
+wish('welcome')
+wish()
