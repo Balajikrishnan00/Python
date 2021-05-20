@@ -118,7 +118,7 @@ def total(**kwargs):
         #print(k,v)
     print(total)
 total(tamil=90,english=80,maths=87,social=78,science=58)
------------------------"""
+-----------------------
 discount=20
 
 def TV():
@@ -133,3 +133,21 @@ def Laptop():
     print(globals()['discount'])
 TV()
 Laptop()
+----------------------------"""
+list=[1,3,5,7,9]
+l1=[]
+
+for x in list:
+    for y in list:
+
+        l1.append(x*10+y)
+
+print(l1)
+for x in l1:
+    if x%2!=0:
+        print(x,end=' ')
+
+n=int(input('Number:'))
+if n%2!=0:
+    print(n)
+
