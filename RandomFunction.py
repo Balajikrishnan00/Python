@@ -14,12 +14,14 @@ for i in range(10):
 """
 key=643894
 n=0
+
 while key !=n:
 
-    n=random.randrange(100000,999999)
+    n=random.randrange(0,999999)
     print('Searching...')
     if key==n:
-        print('well')
-        print(f'Security Key:{key} Match Key:{n}')
+        print('-----------------------------------')
+        print(f'Security Key:\"{key}\" Match Key:{n}')
+        print('-----------------------------------')
         break
 
