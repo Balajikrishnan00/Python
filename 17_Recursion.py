@@ -32,7 +32,7 @@ def dislplay(n):
         dislplay(n)
 
 dislplay(1)
----------------------------"""
+---------------------------
 
 def dis(n):
     print(n)
@@ -52,5 +52,50 @@ def ds(n):
 
     else:
         print('total',total)
-
 ds(1)
+---------------
+# factotial
+
+def factorial(n):
+    if (n==1 or n==0):
+        return n
+    else:
+        #print(n)
+        return n*factorial(n-1)
+
+
+
+#v=int(input('Enter Possitive Factorial:'))
+#len=len(str(factorial(100)))
+#print(factorial(10))
+#print(len)
+
+# sum of digits
+def sumofAdd(n):
+    if n==1 or n==0:
+        return n
+    else:
+        return n+sumofAdd(n-1)
+
+
+print(sumofAdd(3))
+---------------------
+sum=0
+n=12345
+while n>=0:
+    r=n%10  # 5,4,3,2,1
+    sum+=r  # 0+5+4+3+2+1
+    n=n//10 # 1234,123,12,1
+print(sum)
+------------------------
+# sum of Digit
+
+def SumOfDi(n): # 12345
+    if n==0:
+        return 0
+    else:
+        rem=n%10    # 5,4,3,2,1
+        n//=10      # 1234,123,12,1,0
+        return rem+SumOfDi(n)  # 1234,123,12,1
+print(SumOfDi(12345))
+--------------------------"""
