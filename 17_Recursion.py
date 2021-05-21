@@ -21,7 +21,7 @@ def username(u,p):
 uName=input('UserName:')
 pWord=input('Password:')
 username(uName,pWord)
------------------------------"""
+-----------------------------
 def dislplay(n):
 
     print(n)
@@ -32,3 +32,25 @@ def dislplay(n):
         dislplay(n)
 
 dislplay(1)
+---------------------------"""
+
+def dis(n):
+    print(n)
+    n += 1
+    if n<=5:
+        dis(n)
+#dis(1)
+total=0
+def ds(n):
+    global total
+    if n<=10:
+
+        total+=n
+        print(n)
+        n+=1
+        ds(n)
+
+    else:
+        print('total',total)
+
+ds(1)
