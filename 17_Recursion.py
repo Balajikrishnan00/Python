@@ -22,3 +22,13 @@ uName=input('UserName:')
 pWord=input('Password:')
 username(uName,pWord)
 -----------------------------"""
+def dislplay(n):
+
+    print(n)
+    if n==10:
+        pass
+    n+=1
+    if n<=996:
+        dislplay(n)
+
+dislplay(1)
