@@ -98,4 +98,60 @@ def SumOfDi(n): # 12345
         n//=10      # 1234,123,12,1,0
         return rem+SumOfDi(n)  # 1234,123,12,1
 print(SumOfDi(12345))
---------------------------"""
+--------------------------
+def palindrome(n):
+    if n==0:
+        return 0
+
+    else:
+        r=n%10
+        n//=10
+        return r * palindrome(n)
+---------------------
+# Anonymous Function
+# Lambda Functions
+
+squre=lambda n:n*n
+print(squre(5))
+-------------------
+
+# Nested Functions
+def outer():
+    print('Hi i am outer function:')
+
+    def inner():
+        print('inner also function running:')
+    inner()
+
+outer()
+--------------------"""
+
+def math(a,b):
+    print('Outer function running:')
+
+    def add(a,b):
+        print('Inner Function Running:')
+        print('-------------------------------')
+        print('Addition:')
+        return a+b
+    def sub(a,b):
+        print('Subtraction:')
+        return a-b
+    def multiple(a,b):
+        print('Multiplecation:')
+        return a*b
+    def division(a,b):
+        print('Division:')
+        #return a/b
+
+        print('--------------------------------')
+        print('Close Inner Functions')
+        return a / b
+    print(add(a,b))
+    print(sub(a,b))
+    print(multiple(a,b))
+    print(division(a,b))
+
+    print('Close Outer Functions:')
+
+math(10,20)
