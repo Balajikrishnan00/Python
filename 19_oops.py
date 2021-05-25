@@ -158,7 +158,7 @@ class supermarket:
         self.total=total
 
 bread=supermarket('abc',10)
-------------------------------"""
+------------------------------
 total=0
 class supermarket:
     manufac='ssm'
@@ -179,11 +179,6 @@ class supermarket:
         print(f'{self.brand }Quantity {self.quantity}\t\t:{self.quantity*self.price} SAR')
         return total
 
-
-
-
-
-
 rice=supermarket('a1',50)
 chilly=supermarket('aachi',30)
 masala_items=supermarket('b2',35)
@@ -194,3 +189,70 @@ masala_items.order(5)
 rice.bill()
 chilly.bill()
 masala_items.bill()
+----------------------------------------
+# static variable
+class supermarket:
+    manufacturer='Ricemill' # class Variable
+    marketer='SSM'          # class variable
+    def __init__(self,brand,price):
+        self.brand=brand # object variable
+        self.price=price
+rice=supermarket('A1',65)
+masalaItems=supermarket('aachi',50)
+------------------------------------------
+class customer:
+    def deposit(self,amt): # local variable
+        print('You\'r going to deposit :',amt)
+balaji=customer()
+
+balaji.deposit(5000)
+------------------------------------------
+class t1:
+    a=100
+    def __init__(self):
+        self.b=200
+t=t1()
+print(t.a)
+print(t.b)
+print(t1.a)
+t.a=789
+print(t.a)
+print(t1.a)
+t1.a=987
+print(t1.a)
+------------------------------------------
+# type of methods
+
+# 1. instance methods
+# 2. class methods
+# 3. static methods
+
+class student:
+    def __init__(self,name,mark):
+        self.name=name
+        self.mark=mark
+    def display(self):
+        print('hi',self.name)
+#s1=student('balaji',299)
+#s1.display()
+objectList=[]
+for x in range(2):
+    ob=input('Object:')
+    na=input('Name:')
+    ma=int(input('Mark:'))
+    ob=student(na,ma)
+    ob.display()
+-----------------------------------"""
+class office:
+    noHolidays=10 # class variable
+
+    @classmethod
+    def checkHoliday(cls,branch,noHolidays=0):
+        print('This year our ',branch,' has ',noHolidays)
+        print('This year we have',cls.noHolidays)
+        print()
+
+
+#emp1=office()
+#emp1.checkHoliday(15)
+office.checkHoliday('chenai',12)
