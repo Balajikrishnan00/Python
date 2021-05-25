@@ -242,7 +242,7 @@ for x in range(2):
     ma=int(input('Mark:'))
     ob=student(na,ma)
     ob.display()
------------------------------------"""
+-----------------------------------
 class office:
     noHolidays=10 # class variable
 
@@ -256,3 +256,12 @@ class office:
 #emp1=office()
 #emp1.checkHoliday(15)
 office.checkHoliday('chenai',12)
+-----------------------------------------
+# static methods or utility methods
+
+class calculator:
+    @staticmethod
+    def add(no1,no2):
+        print('result:',no1+no2)
+calculator.add(10,20)
+-----------------------------------------"""
