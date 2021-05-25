@@ -159,7 +159,7 @@ class supermarket:
 
 bread=supermarket('abc',10)
 ------------------------------"""
-
+total=0
 class supermarket:
     manufac='ssm'
     marketer='msm'
@@ -167,11 +167,30 @@ class supermarket:
         self.brand=brand
         self.price=price
         self.discount=discount
+        #rice = supermarket('a1', 50)
+
+    def order(self,quantity=0):
+
+        self.quantity=quantity
+
+
+    def bill(self):
+
+        print(f'{self.brand }Quantity {self.quantity}\t\t:{self.quantity*self.price} SAR')
+        return total
+
+
+
+
+
 
 rice=supermarket('a1',50)
 chilly=supermarket('aachi',30)
 masala_items=supermarket('b2',35)
-rice.manufac='aachi'
-print(rice.price)
-print(rice.brand)
-print(rice.manufac)
+#print(rice.brand)
+rice.order(2)
+chilly.order(3)
+masala_items.order(5)
+rice.bill()
+chilly.bill()
+masala_items.bill()
