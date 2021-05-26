@@ -147,7 +147,7 @@ emp1=empolyee(101,20000,'balaji',24,'male')
 print(emp1.age)
 emp1.reading()
 emp1.dowork()
------------------------------------------------"""
+-----------------------------------------------
 class bank:
     bankname='SBI'
     def __init__(self):
@@ -169,3 +169,30 @@ user1.staticmethod()
 user1.deposit()
 user1.withdraw()
 print(user1.min)
+----------------------------------"""
+class Signup:
+    '''This class is about  Signup your account'''
+    def __init__(self,name,accno):
+        self.name=name
+        self.accno=accno
+        self.account=True
+class Rbi(Signup):
+    '''This class is about Bank'''
+    def __init__(self,acname,acno):
+        super(Rbi,self).__init__(acname,acno)
+    def deposit(self):
+        if self.account:
+            print('cash Deposited')
+        else:
+            print('Please Login')
+    def withdraw(self):
+        if self.account:
+            print('cash withdraw success full.')
+        else:
+            print('Login')
+class indianBank(Rbi):
+    pass
+user1=indianBank('balaji',12234)
+user1.deposit()
+user1.withdraw()
+
