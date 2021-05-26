@@ -78,4 +78,94 @@ while True:
 
     elif choice=='S' or choice=='s':
         sys.exit()
----------------------------------------"""
+---------------------------------------
+# inheritance
+# 1. HAS A relationship
+# 2. IS A relationship
+
+class Engine:
+    '''This class is about Engine'''
+    mileage=22
+
+    def __init__(self):
+        self.petrol=True
+        self.Engine_Running=False
+    def EngineStart(self):
+        if self.Engine_Running:
+
+            print('Engine Already Running')
+        else:
+            self.Engine_Running=True
+            print('Engine Started...')
+
+    def EngineStop(self):
+        if self.Engine_Running:
+            self.Engine_Running=False
+            print('Engine Stopped..!')
+        else:
+            print('Engine Already Stopped..!')
+class Car:
+    '''This class is about Car'''
+    def __init__(self):
+        self.engine=Engine()
+    def drive(self):
+        self.engine.EngineStart()
+        print('Car in Running')
+
+    def park(self):
+        self.engine.EngineStop()
+        print('Car stoped')
+c1=Car()
+c1.drive()
+c1.park()
+#t1=Engine()
+#t1.EngineStart()
+#t1.EngineStart()
+#t1.EngineStop()
+#t1.EngineStop()
+------------------------------
+# 2 is a relationship
+
+class humanbeing:
+    '''this class about is humanbeing'''
+    def __init__(self,name,age,sex):
+        self.name=name
+        self.age=age
+        self.sex=sex
+    def reading(self):
+        print('reading books')
+class empolyee(humanbeing):
+    '''this class is about employee'''
+    def __init__(self,empno,salary,name,age,sex):
+        super().__init__(name,age,sex)
+        self.empno=empno
+        self.salary=salary
+    def dowork(self):
+        print('Emp working')
+emp1=empolyee(101,20000,'balaji',24,'male')
+
+print(emp1.age)
+emp1.reading()
+emp1.dowork()
+-----------------------------------------------"""
+class bank:
+    bankname='SBI'
+    def __init__(self):
+        self.min=2000
+    def deposit(self):
+        print('Deposit')
+    def withdraw(self):
+        print('widthraw')
+    @staticmethod
+    def staticmethod():
+        print('staticmethod is running')
+    @classmethod
+    def classmethod(cls):
+        print('classmethod is running',cls.bankname)
+
+user1=bank()
+user1.classmethod()
+user1.staticmethod()
+user1.deposit()
+user1.withdraw()
+print(user1.min)
