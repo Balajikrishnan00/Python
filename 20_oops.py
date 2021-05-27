@@ -202,7 +202,7 @@ class indianBank(Rbi):
 #user1.staticmethod()
 user2 =indianBank()
 user2.deposit()
----------------------------------------"""
+---------------------------------------
 # multiple inheritance
 
 class RBI:
@@ -220,4 +220,23 @@ class LBank(SBI):
     pass
 l1=LBank()
 l1.Loan()
-r1=RBI()
+l1.deposite()
+
+----------------------------"""
+class Bank1:
+    def deposite(self):
+        print('Deposite amount')
+    def withdraw(self):
+        print('Withdraw')
+class Bank2:
+    def AgriLoad(self):
+        print('Got AgriLoan')
+    def EducationLoan(self):
+        print('You Got Education Loan')
+class Bank3(Bank2,Bank1):
+    pass
+user1=Bank3()
+user1.deposite()
+user1.withdraw()
+user1.AgriLoad()
+user1.EducationLoan()
