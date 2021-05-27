@@ -169,7 +169,7 @@ user1.staticmethod()
 user1.deposit()
 user1.withdraw()
 print(user1.min)
-----------------------------------"""
+----------------------------------
 class Signup:
     '''This class is about  Signup your account'''
     def __init__(self,name,accno):
@@ -191,8 +191,15 @@ class Rbi(Signup):
         else:
             print('Login')
 class indianBank(Rbi):
-    pass
-user1=indianBank('balaji',12234)
-user1.deposit()
-user1.withdraw()
+    @staticmethod
+    def staticmethod():
+        print('staticmethod is running')
 
+#user1=indianBank('balaji',12234)
+#user1.deposit()
+#user1.withdraw()
+#print(user1.account)
+#user1.staticmethod()
+user2 =indianBank()
+user2.deposit()
+---------------------------------------"""
