@@ -203,3 +203,21 @@ class indianBank(Rbi):
 user2 =indianBank()
 user2.deposit()
 ---------------------------------------"""
+# multiple inheritance
+
+class RBI:
+    def Loan(self):
+        print('Loan')
+    def loadthallupadi(self):
+        print('Getting done')
+
+class SBI(RBI):
+    def deposite(self):
+        print('Deposited')
+    def withdraw(self):
+        print('Withdraw')
+class LBank(SBI):
+    pass
+l1=LBank()
+l1.Loan()
+r1=RBI()
