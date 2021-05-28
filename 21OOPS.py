@@ -181,9 +181,12 @@ c1=child()
 # super() -> class variable,instance method,staticmethod,classmethod
 # using in child class constructor,child class instance Method
 -----------------------------------------------------------------"""
+# 1
 class Patent:
+    i=10
     def __init__(self):
         print('Parent Constructor')
+        self.j=20
     def InsMethod(self):
         print('ParentInsMethod')
     @staticmethod
@@ -205,11 +208,17 @@ class Child(Patent):
     @classmethod
     def MethodClass(cls):
         print('Child ClassMethod')
+        #super().InsMethod(object1)
+        super(Child,cls).InsMethod(cls)
+
+
 object1=Child()
-object1.Method1()
-object1.MethodStatic()
-object1.MethodClass()
-object1.InsMethod()
-object1.StaticMethod()
-object1.ClassMethod()
-object2=Patent()
+#object1.Method1()
+#object1.MethodStatic()
+#object1.MethodClass()
+#object1.InsMethod()
+#object1.StaticMethod()
+#object1.ClassMethod()
+#object2=Patent()
+
+# child object can use all method fron parent class
