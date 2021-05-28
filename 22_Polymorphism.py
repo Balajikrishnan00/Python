@@ -23,8 +23,9 @@ listofvehiles=[b,l,c]
 
 for x in listofvehiles:
     charge(x)
---------------------------------"""
+--------------------------------
 # operator Overloading
+need to deep learn
 class book:
     def __init__(self,pages):
         self.pages=pages
@@ -41,3 +42,15 @@ b2=book(100)
 print(b1+b2)
 print(b1*b2)
 print(b1%b2)
+-------------------------------------"""
+class mobile:
+    def __init__(self,brand,price):
+        self.brand=brand
+        self.price=price
+    def __gt__(self, other):
+        return self.price>other.price
+m1=mobile('samsung',10000)
+m2=mobile('Vivo',12000)
+
+print(m1>m2)
+
