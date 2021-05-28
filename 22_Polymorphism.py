@@ -42,7 +42,7 @@ b2=book(100)
 print(b1+b2)
 print(b1*b2)
 print(b1%b2)
--------------------------------------"""
+-------------------------------------
 class mobile:
     def __init__(self,brand,price):
         self.brand=brand
@@ -53,4 +53,23 @@ m1=mobile('samsung',10000)
 m2=mobile('Vivo',12000)
 
 print(m1>m2)
+------------------------------"""
+class Mobile:
+    def __init__(self,brand,price,offer):
+        self.brand=brand
+        self.price=price
+        self.offer=offer
+    def __gt__(self, other):
+        return self.price>other.price
 
+    def __add__(self,other):
+        return self.offer+other.ccoffer
+
+class CreditCard:
+    def __init__(self,ccoffer):
+        self.ccoffer=ccoffer
+m1=Mobile('samsung',12000,850)
+m2=Mobile('vivo',11000,450)
+cc=CreditCard(1000)
+print(m2>m1)
+print(m1+cc)
