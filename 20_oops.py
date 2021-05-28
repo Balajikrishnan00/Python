@@ -106,7 +106,7 @@ class Engine:
             print('Engine Already Stopped..!')
 class Car:
     '''This class is about Car'''
-    def __init__(self):
+    def __init__ (self):
         self.engine=Engine()
     def drive(self):
         self.engine.EngineStart()
@@ -281,3 +281,24 @@ emp2=employee('siva',24,102,40000)
 print(emp2.__doc__)
 print(emp2.__dict__)
 -----------------------------"""
+# Multilevel Bank
+class HeadBank:
+    def EDULoan(self):
+        print('Edu Loan')
+    def AgriLoan(self):
+        print('AgriLoan')
+class SBI(HeadBank):
+    def Saving(self):
+        print('Savings')
+    def Deposit(self):
+        print('Deposit')
+    def Widthraw(self):
+        print('withdraw')
+class VillageBank(SBI):
+    def NEWaccount(self):
+        print('New User')
+
+c1=VillageBank()
+c1.EDULoan()
+c1.Saving()
+c1.NEWaccount()
