@@ -50,7 +50,7 @@ cus1=Human('siva',25)
 print(cus1)
 print(cus1.name)
 print(cus1.age)
------------------------------------"""
+-----------------------------------
 
 class Grandpa:
     def car(self):
@@ -72,3 +72,30 @@ iam.bike()
 iam.car()
 iam.Scooty()
 iam.cycle()
+-----------------------------------
+
+# hierarchical Inheritance
+
+class Honda:
+    def getHondasalaty(self):
+        print('Honda salary')
+
+class bike(Honda):
+    def designBike(self):
+        print('Bike designing')
+
+class car(Honda):
+    def designCar(self):
+        print('Designing Car')
+
+b1=bike()
+b1.designBike()
+b1.getHondasalaty()
+
+c1=car()
+c1.designCar()
+c1.getHondasalaty()
+
+h1=Honda()
+h1.getHondasalaty()
+------------------------------"""
