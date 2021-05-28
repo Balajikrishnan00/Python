@@ -98,7 +98,7 @@ c1.getHondasalaty()
 
 h1=Honda()
 h1.getHondasalaty()
-------------------------------"""
+------------------------------
 class Maruti:
     def giveSalary(self):
         print('Maruti Give Salary')
@@ -123,3 +123,19 @@ Suzuki.giveSalary(self='Suzuki')
 
 Maruti.giveSalary(self=Maruti)
 Suzuki.giveSalary(self=Suzuki)
+-----------------------------------------"""
+
+class Parent:
+    i=100  # need of super() keyword
+    def __init__(self):
+        self.j=200 # no need of super() keyword
+
+class child(Parent):
+    def m1(self):
+        print(super().i)
+        #super(child, self).__init__()
+        print(self.i)
+        print(self.j)
+c1=child()
+c1.m1()
+
