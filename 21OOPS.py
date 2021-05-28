@@ -125,17 +125,59 @@ Maruti.giveSalary(self=Maruti)
 Suzuki.giveSalary(self=Suzuki)
 -----------------------------------------"""
 
-class Parent:
-    i=100  # need of super() keyword
+class Parent:  # super Class
+    i=100   # need of super() keyword ,Class Variable
     def __init__(self):
-        self.j=200 # no need of super() keyword
+        self.j=200 # no need of super() keyword  ,Self variable
+        print('HI Iam super of Constructor')
+        self.Test1()
+    def Test1(self): # instance Method
+        print('super Test1')
+    @staticmethod # staticMethod
+    def Test2():
+        print('StaticMethod')
+
+    @classmethod # classmethod
+    def Test3(cls):
+        print('ClassMethod')
 
 class child(Parent):
+
+    def __init__(self):
+        print('Child Constructor')
+        super(child,self).__init__()
+        super().Test1()
+        super().Test2()
+        super().Test3()
+
     def m1(self):
+        print('-------m1 start--------')
         print(super().i)
         #super(child, self).__init__()
         print(self.i)
         print(self.j)
+        self.Test1()
+        super(child, self).__init__()
+        super().Test1()
+        super().Test2()
+        super().Test3()
+        print('-------m1 end---------')
+
+        @classmethod
+        def dis(cls):
+            print('child class method')
+            #super().Test1()
 c1=child()
-c1.m1()
+
+#c1.Test1()
+#print('--------------------------------')
+#c1.m1()
+#p1=Parent()
+#p1.Test2()
+#p1.Test3()
+#p1.Test1()
+
+
+# super() -> class variable,instance method,staticmethod,classmethod
+# using in child class constructor,child class instance Method
 
