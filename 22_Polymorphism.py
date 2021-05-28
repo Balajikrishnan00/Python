@@ -53,7 +53,7 @@ m1=mobile('samsung',10000)
 m2=mobile('Vivo',12000)
 
 print(m1>m2)
-------------------------------"""
+------------------------------
 class Mobile:
     def __init__(self,brand,price,offer):
         self.brand=brand
@@ -73,3 +73,42 @@ m2=Mobile('vivo',11000,450)
 cc=CreditCard(1000)
 print(m2>m1)
 print(m1+cc)
+---------------------------
+class Test:
+    def calulate(self,*n):
+        print('aa')
+        total=0
+        for i in n:
+            total+=i
+        print(total)
+    #def calulate(self,no1,no2,no3):
+    #    print('bbb')
+
+t=Test()
+t.calulate(1,2)
+#t.calulate(1,2,3)
+-------------------------
+# constructor overloading
+
+class supermarket:
+    def __init__(self,*content):
+        print('Constructor')
+ob1=supermarket('soap',20,3)
+ob2=supermarket('Rice',40)
+--------------------------
+# Method Overriding
+# same method name in Parent and Child
+class P:
+    def study(self):
+        print('Parent study')
+class C(P):
+    def play(self):
+        print('Child Play')
+    def study(self):
+        super().study()
+        print('Child Study')
+c=C()
+c.study()
+P.study(c)
+
+------------------------"""
