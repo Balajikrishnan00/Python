@@ -123,7 +123,7 @@ Suzuki.giveSalary(self='Suzuki')
 
 Maruti.giveSalary(self=Maruti)
 Suzuki.giveSalary(self=Suzuki)
------------------------------------------"""
+-----------------------------------------
 
 class Parent:  # super Class
     i=100   # need of super() keyword ,Class Variable
@@ -180,4 +180,36 @@ c1=child()
 
 # super() -> class variable,instance method,staticmethod,classmethod
 # using in child class constructor,child class instance Method
+-----------------------------------------------------------------"""
+class Patent:
+    def __init__(self):
+        print('Parent Constructor')
+    def InsMethod(self):
+        print('ParentInsMethod')
+    @staticmethod
+    def StaticMethod():
+        print('Parent StaticMethod')
+    @classmethod
+    def ClassMethod(cls):
+        print("Parent ClassMethod")
 
+class Child(Patent):
+    def __init__(self):
+        print('Child Constructor')
+    def Method1(self):
+        print('Child Ins Method1')
+    @staticmethod
+    def MethodStatic():
+        print('Child StaticMethod')
+
+    @classmethod
+    def MethodClass(cls):
+        print('Child ClassMethod')
+object1=Child()
+object1.Method1()
+object1.MethodStatic()
+object1.MethodClass()
+object1.InsMethod()
+object1.StaticMethod()
+object1.ClassMethod()
+object2=Patent()
