@@ -262,4 +262,22 @@ print(c1.Ho_OFFER)
 c1.MegaOffer()
 c1.LocalOffer()
 
+-----------------------------
+class Human:
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+
+class employee(Human):
+    '''This class is about Employee'''
+    def __init__(self,name,age,empno,salary):
+        super(employee,self).__init__(name,age)
+
+        self.emp=empno
+        self.salary=salary
+#emp1=employee('balaji',24,101,2000)
+emp2=employee('siva',24,102,40000)
+
+print(emp2.__doc__)
+print(emp2.__dict__)
 -----------------------------"""
