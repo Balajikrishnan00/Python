@@ -1,3 +1,4 @@
+"""
 class Human:
     def __init__(self,name,age):
         self.name=name
@@ -11,5 +12,12 @@ for x in dir(Human):
 
         print(x,'string')
     elif dict(x):
-        print('dict')
+        for i,j in dict(x).items():
+            print('dict')
+    else:
+        print('Other')
+------------------------------"""
+print('hello')
+
+print(print('hai'),print('Welcome'))
 
