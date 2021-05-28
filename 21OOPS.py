@@ -99,3 +99,27 @@ c1.getHondasalaty()
 h1=Honda()
 h1.getHondasalaty()
 ------------------------------"""
+class Maruti:
+    def giveSalary(self):
+        print('Maruti Give Salary')
+
+class Suzuki:
+    def giveSalary(self):
+        print('Suzuki Give Salary')
+
+class MarutiSuzuki(Suzuki,Maruti):
+    def giveSalary(self):
+        print('MarutiSuzuki Give salary')
+        Suzuki.giveSalary(self)
+        Maruti.giveSalary(self)
+
+
+
+ms1=MarutiSuzuki()
+ms1.giveSalary()
+
+Maruti.giveSalary(self='Maruti')
+Suzuki.giveSalary(self='Suzuki')
+
+Maruti.giveSalary(self=Maruti)
+Suzuki.giveSalary(self=Suzuki)
