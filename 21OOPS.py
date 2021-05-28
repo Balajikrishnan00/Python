@@ -25,7 +25,7 @@ for x in dir(Human):
 #   hai
 #   Welcome
 #   None None
-------------------------------------"""
+------------------------------------
 class Human:
     def __init__(self,name,age):
         self.name=name
@@ -50,3 +50,25 @@ cus1=Human('siva',25)
 print(cus1)
 print(cus1.name)
 print(cus1.age)
+-----------------------------------"""
+
+class Grandpa:
+    def car(self):
+        print('Grandpa car')
+class Father(Grandpa):
+    def bike(self):
+        print('Father Bike')
+class mother:
+    def Scooty(self):
+        print('Mother Scooty')
+
+class me(Father,mother):
+    def cycle(self):
+        print('child cycle')
+
+
+iam=me()
+iam.bike()
+iam.car()
+iam.Scooty()
+iam.cycle()
