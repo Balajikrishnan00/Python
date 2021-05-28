@@ -222,7 +222,7 @@ l1=LBank()
 l1.Loan()
 l1.deposite()
 
-----------------------------"""
+----------------------------
 class Bank1:
     def deposite(self):
         print('Deposite amount')
@@ -240,3 +240,26 @@ user1.deposite()
 user1.withdraw()
 user1.AgriLoad()
 user1.EducationLoan()
+------------------------------
+class lali:
+    address='chennai'
+    def __init__(self):
+        self.Ho_OFFER=1000
+    def MegaOffer(self):
+        print('Mega Offer')
+class lali1(lali):
+    def __init__(self):
+        super(lali1,self).__init__()
+        self.L_OFFE=500
+    def LocalOffer(self):
+        print('Local 0ffer')
+
+c1=lali1()
+#c1.Ho_OFFER
+print(c1.address)
+print(c1.L_OFFE)
+print(c1.Ho_OFFER)
+c1.MegaOffer()
+c1.LocalOffer()
+
+-----------------------------"""
