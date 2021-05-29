@@ -125,7 +125,7 @@ class Child(Parent):
 c=Child()
 c.Method()
 Parent.__init__(c)
-------------------------------"""
+------------------------------
 
 # Abstraction
 # showing only the Necessary data and Hiding Unwanted
@@ -158,4 +158,54 @@ c.havingBreakfast()
 #c.havingBreakfast()
 #Tamil.havingBreakfast(c)
 #t.hello()
+----------------------------------
+from abc import *
+class DataBase(ABC):
+    @abstractmethod
+    def ConnectDB(self):
+        pass
+    @abstractmethod
+    def DisconnectDB(self):
+        pass
+
+#D=DataBase()
+#D.ConnectDB()
+#D.DisconnectDB()
+class Mysql(DataBase):
+    def ConnectDB(self):
+        print('SQL Database Connected...')
+    def DisconnectDB(self):
+        print('SQL Database Disconnected...')
+class Oracle(DataBase):
+    def ConnectDB(self):
+        print('Oracle connected')
+    def DisconnectDB(self):
+        print('Oracle Disconnected')
+
+DBname=input('Enter DB Name:')
+DBclass=globals()[DBname]
+d=DBclass()
+d.ConnectDB()
+-----------------------------------"""
+class test:
+    a=10
+    _b=20
+    __c=30
+    def __init__(self):
+        self.__d=30
+    def hello(self):
+        print('Welcome')
+        print(test._b)
+        print(test.__c)
+
+class Test1:
+    def hai(self):
+        print('Hai')
+        print(test.a)
+        print(test._b)
+        #print(test.__c)
+t=test()
+#print(test.__c)
+#test.hello(test)
+#Test1.hai(Test1)
 
