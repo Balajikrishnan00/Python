@@ -111,4 +111,51 @@ c=C()
 c.study()
 P.study(c)
 
-------------------------"""
+------------------------
+# constructor overriding
+class Parent:
+    def __init__(self):
+        print('I am Parent Class Constructor')
+    def Method(self):
+        print('Parent method')
+class Child(Parent):
+    def __init__(self):
+        super(Child, self).__init__()
+        print('Iam Child Constructor')
+c=Child()
+c.Method()
+Parent.__init__(c)
+------------------------------"""
+
+# Abstraction
+# showing only the Necessary data and Hiding Unwanted
+from abc import *
+class Indian(ABC):
+
+    @abstractmethod
+    def havingBreakfast(self):
+        pass
+
+class Tamil(Indian):
+
+    #def havingBreakfast(self):
+    pass
+
+        #print('Tamilnadu Breakfast')
+    #    print('tamil nadu')
+    #def hello(self):
+    #    print('Hello')
+class chennai(Tamil):
+    #pass
+    def havingBreakfast(self):
+        print('rice dosa')
+
+
+#t=Tamil()
+#t.havingBreakfast()
+c=chennai()
+c.havingBreakfast()
+#c.havingBreakfast()
+#Tamil.havingBreakfast(c)
+#t.hello()
+
