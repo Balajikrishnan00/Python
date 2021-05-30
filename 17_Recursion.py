@@ -124,7 +124,7 @@ def outer():
     inner()
 
 outer()
---------------------"""
+------------------------------------------
 
 def math(a,b):
     print('Outer function running:')
@@ -155,3 +155,4 @@ def math(a,b):
     print('Close Outer Functions:')
 
 math(10,20)
+----------------------------------------------"""

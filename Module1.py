@@ -10,3 +10,9 @@ def div(a,b):
 
 def mul(a,b):
     return a*b
+def module():
+    if __name__=="__main__":
+        print('python Program')
+    else:
+        print('Python Module')
+module()

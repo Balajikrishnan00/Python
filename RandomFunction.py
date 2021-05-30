@@ -11,7 +11,7 @@ for i in range(20):
 winnerList=['siva','selvan','balaji','bala']
 for i in range(10):
     print(random.choice(winnerList))
-"""
+
 key=643894
 n=0
 
@@ -24,4 +24,5 @@ while key !=n:
         print(f'Security Key:\"{key}\" Match Key:{n}')
         print('-----------------------------------')
         break
+"""
 

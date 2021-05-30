@@ -105,7 +105,7 @@ for i in range(len(a)):
         if i==j:
             total=total+a[i][j]
 print(total)
------------------------------------"""
+-----------------------------------
 total=0
 a=[[10,20,30],[40,50,60],[70,80,90]]
 i=0
@@ -121,3 +121,26 @@ while i<=len(a)-1:
         j+=1
     i+=1
 print(total)
+-------------------------
+a=[[10,20,30],[40,50,60],[70,80,90]]
+i=0
+while i<len(a):
+    #print(i)
+    #i+=1
+    j=0
+    while j<len(a[i]):
+        print(a[j][i],end=' ')
+        j+=1
+    print()
+    i+=1
+-----------------------------------
+names=['balaji','siva','krishnan','arun']
+time=[19.11,16.3,15.2,14.1]
+times=[]
+i=0
+
+while i<len(time):
+    j=1
+    while j<len(time):
+        if time[i]>time[j]:
+---------------------------------"""
