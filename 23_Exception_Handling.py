@@ -74,7 +74,7 @@ try:
     print(10+'hello')
 except (ZeroDivisionError,ValueError,TypeError):
     print('Something Went Wrong')
--------------------------------------------"""
+-------------------------------------------
 # finally
 
 try:
@@ -86,3 +86,62 @@ finally:
 
 
 # os.exit() will not use finally
+------------------------------------------
+try:
+    n1=int(input('Enter n1:'))
+    n2=int(input('Enter n2:'))
+    print('Try1')
+
+    try:
+        print(n1/n2)
+        print('Try2')
+    except(ZeroDivisionError):
+        print('ZeroDivisionError')
+    finally:
+        print('Program Terminated1')
+except ValueError:
+    print('ValueError')
+else:
+    print('Else Running') # else part is running without Exception Occured
+finally:
+    print('Program Terminated2')
+----------------------------------------------"""
+class InsufficientBalanceException(Exception):
+    def __init__(self,mgs):
+        self.mgs=mgs
+        #print('Check Your Balance')
+
+class Bank():
+    def __init__(self,username,password,blance=0):
+        self.username=username
+        self.password=password
+        self.blance=blance
+    def BlanceEnqury(self):
+        print('Current Blance is:',self.blance)
+    def withdraw(self,amount):
+
+        
+        try:
+            if self.blance>=500 and self.blance-amount>=500:
+                self.blance-=amount
+
+            #print('Current Blance is:',self.blance)
+
+        
+            raise InsufficientBalanceException('Check Your Balance')
+        except InsufficientBalanceException:
+            print('user defined Exception')
+
+
+            #print('Invaild Blance')
+    def deoposit(self,cash):
+        self.blance+=cash
+        print('Current Blance is:',self.blance)
+
+user1=Bank('balaji','12345')
+user1.BlanceEnqury()
+user1.deoposit(5000)
+user1.withdraw(5000)
+#user1.BlanceEnqury()
+#user1.withdraw(4500)
+#user1.BlanceEnqury()
