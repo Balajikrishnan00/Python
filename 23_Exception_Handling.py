@@ -105,7 +105,7 @@ else:
     print('Else Running') # else part is running without Exception Occured
 finally:
     print('Program Terminated2')
-----------------------------------------------"""
+----------------------------------------------
 class InsufficientBalanceException(Exception):
     def __init__(self,mgs):
         self.mgs=mgs
@@ -126,9 +126,9 @@ class Bank():
                 self.blance-=amount
 
             #print('Current Blance is:',self.blance)
-
+                ibe=InsufficientBalanceException('Check Your Balance')
         
-            raise InsufficientBalanceException('Check Your Balance')
+                raise ibe 
         except InsufficientBalanceException:
             print('user defined Exception')
 
@@ -145,3 +145,22 @@ user1.withdraw(5000)
 #user1.BlanceEnqury()
 #user1.withdraw(4500)
 #user1.BlanceEnqury()
+------------------------------------------------
+
+class InsufficientBlance(Exception):
+    def __init__(self,mgs):
+        self.mgs=mgs
+        #print(self.mgs)
+
+blance=1000
+amount=int(input('Enter Your amount:'))
+
+try:
+    if amount>blance:
+        raise InsufficientBlance('check your Balance')
+#else:
+#    print(amount)
+except InsufficientBlance:
+    print('Check your Blance!')
+---------------------------------------------"""
+
