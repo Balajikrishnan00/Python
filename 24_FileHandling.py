@@ -16,5 +16,14 @@ for x in email_list:
 	f.write(x+'\n')
 print('file writting Sucessfull')
 f.close()
-"""
+---------------------------------"""
+import os
+# r,w,a,r+,w+,a+,x
 
+file=open('python.txt','r')
+#print(file.name)
+#print(file.mode)
+#print(file.readable())
+#print(file.closed)
+#file.close()
+#print(file.closed)
