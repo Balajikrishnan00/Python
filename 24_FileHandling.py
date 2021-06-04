@@ -33,6 +33,20 @@ file.close()
 #print(file.writable())
 #print(file.readable())
 print(file.closed)
-------------------------"""
-f=open('python.txt','w')
-f.write('balaji')
+------------------------
+f=open('python01.txt','r+')
+data=f.readlines()
+#print(data)
+strdata=[]
+for x in data:
+    strdata.append(x.split())
+
+print(len(strdata))
+word=0
+for i in strdata:
+    word+=len(i)
+    #for j in i:
+        #print(j)
+#print(word)
+f.write('\nword='+str(word))
+----------"""
