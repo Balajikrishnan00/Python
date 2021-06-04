@@ -33,6 +33,23 @@ file.close()
 #print(file.writable())
 #print(file.readable())
 print(file.closed)
-------------------------"""
+------------------------
 f=open('python.txt','w')
-f.write('balaji')
+#f.write('balaji')
+lis=['selvam','guru','ravi','siva']
+for x in lis:
+    f.write(x+' ')
+------------------------
+file=open('python.txt','w')
+passwordList=['b','a','l','a','j','i']
+for x in passwordList:
+    for x in passwordList:
+        file.write(x+x+'\n')
+file.close()
+---------------------
+import re
+
+#password = "R@m@_f0rtu9e$"
+f1=open('python.txt','r')
+data=f1.readline()
+------------------------------------"""
