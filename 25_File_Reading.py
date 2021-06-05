@@ -60,7 +60,7 @@ file1=fileHandling('python.txt')
 print('No of line:',file1.fileLine())
 print('No of word:',file1.file_noof_word())
 print('No of char:',file1.No_of_char())
-_______________"""
+_______________
 filename='python.txt'
 file=open(filename,'r')
 linecount=wordcount=charcount=0
@@ -79,3 +79,19 @@ for line in file:
 print(linecount)
 print(wordcount)
 print(charcount)
+_______________________
+filename='python.txt'
+f=open(filename,'r')
+l=w=c=0
+for line in f:
+    l+=1
+
+    word=line.split()
+    #print(word)
+    w+=len(word)
+    for x in word:
+        c+=len(x)
+print(l)
+print(w)
+print(c)
+------------------------------------"""
