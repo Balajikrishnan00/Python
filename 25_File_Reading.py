@@ -10,7 +10,7 @@ import os
 #file='python01.txt'
 if os.path.isfile('python01.txt'):
     print('Available')
-_____________________________"""
+_____________________________
 import os
 class fileHandling:
     '''this class is about File Handling'''
@@ -60,3 +60,22 @@ file1=fileHandling('python.txt')
 print('No of line:',file1.fileLine())
 print('No of word:',file1.file_noof_word())
 print('No of char:',file1.No_of_char())
+_______________"""
+filename='python.txt'
+file=open(filename,'r')
+linecount=wordcount=charcount=0
+for line in file:
+    #print(line)
+    #print(line)
+    linecount+=1
+    word=line.split()
+
+    wordcount+=len(word)
+    for x in word:
+        for y in x:
+            charcount+=len(y.split())
+    #print(wordcount)
+
+print(linecount)
+print(wordcount)
+print(charcount)
