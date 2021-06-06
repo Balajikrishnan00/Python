@@ -135,3 +135,26 @@ for x in lis1:
 f2.close()
 f1.close()
 -----------------------------------"""
+import csv
+import os
+filename='student.csv'
+try:
+    os.path.isfile(filename)
+except FileNotFoundError:
+    print('File Not FoundError')
+else:
+    with open(filename,'r',newline='') as f:
+        reader=csv.reader(f)
+        op=list(reader)
+        print(op)
+        word=char=line=0
+        for l in op:
+            for y in l:
+                word+=1
+                char+=len(y)
+            line+=1
+        print('Line:',line)
+        print("Word:",word)
+        print('Char:',char)
+
+
