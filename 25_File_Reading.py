@@ -101,4 +101,37 @@ outputLoc=open('C:/Users/balaj/Downloads/goog.jpg','wb')
 
 byte=inputFile.read()
 outputLoc.write(byte)
----------------------------------------"""
+---------------------------------------
+import csv
+c=len(dir(csv))
+#print(c)
+with open('student.csv','w',newline='')as f:
+    pen=csv.writer(f)
+    pen.writerow(['sid','sname','saddress'])
+    students=int(input('Enter N of Student :'))
+    for i in range(students):
+        sid=input('Student Sid:')
+        sname=input('student sname:')
+        saddress=input('student Address:')
+        pen.writerow([sid,sname,saddress])
+--------------------------------------------
+import csv
+lis1=['balaji','siva','guru','men']
+file=open('student.csv','a')
+p=csv.writer(file)
+p.writerow(lis1)
+------------------------------------------
+import csv
+f1=open('python01.txt','r')
+data=f1.readlines()
+#print(len(data))
+lis1=[]
+for x in data:
+    lis1.append(x.split())
+f2=open('student.csv','w',newline='')
+pen=csv.writer(f2)
+for x in lis1:
+    pen.writerow(x)
+f2.close()
+f1.close()
+-----------------------------------"""
