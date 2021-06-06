@@ -94,4 +94,11 @@ for line in f:
 print(l)
 print(w)
 print(c)
-------------------------------------"""
+------------------------------------
+import os
+inputFile=open('C:/Users/balaj/Downloads/google.jpg','rb')
+outputLoc=open('C:/Users/balaj/Downloads/goog.jpg','wb')
+
+byte=inputFile.read()
+outputLoc.write(byte)
+---------------------------------------"""
